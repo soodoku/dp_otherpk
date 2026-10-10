@@ -97,6 +97,7 @@ jsonlite::write_json(list(
   response_input_sha256 = response_hash,
   seed = 20261010L, bootstrap_draws = 5000L,
   comparison = "Equal-item mean of paired-time group means; U minus C",
+  knowledge_gap = "Equal-item C minus U accuracy, before and after",
   same_people_in_both_categories_required = FALSE,
   causal = FALSE,
   code_sha256 = digest::digest("R/comparative.R", file = TRUE, algo = "sha256"),

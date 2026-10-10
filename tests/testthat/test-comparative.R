@@ -153,4 +153,28 @@ testthat::test_that("cluster bootstrap matches direct single-item means", {
   testthat::expect_equal(result$diagnostics$invalid_draws, 0)
   testthat::expect_equal(result$diagnostics$status, "ok")
   testthat::expect_true(result$diagnostics$sparse_support)
+  gap <- result$estimates[result$estimates$metric == "gap_post", ]
+  testthat::expect_equal(gap$estimate, -25)
+  testthat::expect_equal(
+    c(gap$lower, gap$upper),
+    unname(stats::quantile(-expected, c(0.025, 0.975)))
+  )
+})
+
+testthat::test_that("relative gains can reverse a remaining knowledge gap", {
+  data <- data.frame(
+    respondent_id = as.character(1:8), item_id = "single",
+    relation = rep(c("congenial", "uncongenial"), each = 4),
+    pre = c(1, 1, 0, 0, 1, 0, 0, 0),
+    post = c(1, 1, 0, 0, 1, 1, 1, 0),
+    cluster_id = rep(letters[1:4], 2)
+  )
+  result <- comparative_estimates(data,
+    draws = 100, min_valid = 20, resample = "cluster"
+  )
+  values <- setNames(result$estimates$estimate, result$estimates$metric)
+  testthat::expect_equal(
+    unname(values[c("gain_u", "difference", "gap_pre", "gap_post")]),
+    c(50, 50, 25, -25)
+  )
 })

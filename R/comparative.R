@@ -40,7 +40,8 @@ comparative_metrics <- function(pre, post) {
   cbind(
     pre_c = pre[, 1], post_c = post[, 1], gain_c = post[, 1] - pre[, 1],
     pre_u = pre[, 2], post_u = post[, 2], gain_u = post[, 2] - pre[, 2],
-    difference = post[, 2] - pre[, 2] - post[, 1] + pre[, 1]
+    difference = post[, 2] - pre[, 2] - post[, 1] + pre[, 1],
+    gap_pre = pre[, 1] - pre[, 2], gap_post = post[, 1] - post[, 2]
   )
 }
 

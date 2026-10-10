@@ -48,7 +48,14 @@
     "metadata_source": "https://api.crossref.org/works/10.1111/j.1475-6765.2007.00699.x",
     "citation_key": "andersen2007",
     "content_source": "https://www.kaspermhansen.eu/Work/andersen_hansen_2007.pdf",
-    "validation": "First page and event-design description; title, author order, journal, year, pages and DOI verified."
+    "validation": "First page and event-design description; title, author order, journal, year, pages and DOI verified.",
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://www.kaspermhansen.eu/Work/andersen_hansen_2007.pdf",
+      "evidence": "Published title page, pp. 531–533, and abstract; metadata agrees with existing DOI record.",
+      "supported_claim": "Danish event design, factual learning and opinion change.",
+      "status": "verified"
+    }
   },
   {
     "DOI": "10.1007/s11109-017-9395-7",
@@ -101,7 +108,14 @@
     "citation_key": "khanna2018",
     "content_source": "https://link.springer.com/article/10.1007/s11109-017-9395-7",
     "validation": "Publisher citation and issue date verify 2018, distinct from online publication in 2017. Author-hosted manuscript abstract and methods substantiate distinction between responding and learning.",
-    "issue_year": 2018
+    "issue_year": 2018,
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://link.springer.com/article/10.1007/s11109-017-9395-7",
+      "evidence": "Publisher title, authors, volume 40, pp. 79–101, 2018 issue year and abstract; online-first date is 2017.",
+      "supported_claim": "Accuracy incentives distinguish motivated reporting from motivated learning.",
+      "status": "verified"
+    }
   },
   {
     "DOI": "10.1561/100.00020178",
@@ -167,7 +181,75 @@
     "metadata_source": "https://api.crossref.org/works/10.1561/100.00020178",
     "citation_key": "roush2023",
     "content_source": "https://gsood.com/research/papers/partisan_gap.pdf",
-    "validation": "Author manuscript abstract and coding discussion substantiate content claim; Crossref and publisher volume 18 issue 1 verify publication metadata."
+    "validation": "Author manuscript abstract and coding discussion substantiate content claim; Crossref and publisher volume 18 issue 1 verify publication metadata.",
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://gsood.com/research/papers/partisan_gap.pdf",
+      "evidence": "Author manuscript title page, abstract and coding discussion; fresh publisher-deposited Crossref metadata confirms authors, title, 2023, volume 18(1), pp. 131–151 and DOI. Author PDF is a 2022 prepublication version.",
+      "supported_claim": "Partisan knowledge gaps vary in prevalence and size across items.",
+      "status": "verified",
+      "metadata_record": {
+        "DOI": "10.1561/100.00020178",
+        "title": [
+          "A Gap in Our Understanding? Reconsidering the Evidence for Partisan Knowledge Gaps"
+        ],
+        "author": [
+          {
+            "given": "Carolyn E.",
+            "family": "Roush",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Florida State University ,",
+                "place": [
+                  "USA"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Gaurav",
+            "family": "Sood",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Independent Researcher ,",
+                "place": [
+                  "USA"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Quarterly Journal of Political Science"
+        ],
+        "volume": "18",
+        "issue": "1",
+        "page": "131-151",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              1
+            ]
+          ]
+        }
+      }
+    }
   },
   {
     "DOI": "10.1093/joc/jqy056",
@@ -243,7 +325,14 @@
     "metadata_source": "https://api.crossref.org/works/10.1093/joc/jqy056",
     "citation_key": "kim2018",
     "content_source": "https://doi.org/10.1093/joc/jqy056",
-    "validation": "Local publisher PDF in dp_data/data/bulgaria-2007/papers/intergroup-contact-deliberative-contexts-2018.pdf: title page and outgroup-knowledge methods checked."
+    "validation": "Local publisher PDF in dp_data/data/bulgaria-2007/papers/intergroup-contact-deliberative-contexts-2018.pdf: title page and outgroup-knowledge methods checked.",
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://academic.oup.com/joc/article-abstract/68/6/1029/5146304",
+      "evidence": "Publisher metadata and local published PDF, Outgroup knowledge and Measures sections. The paper measures outgroup knowledge but does not find that increased knowledge mediates contact effects.",
+      "supported_claim": "Outgroup factual knowledge is a distinct measured construct.",
+      "status": "verified"
+    }
   },
   {
     "DOI": "10.1111/j.1468-2508.2007.00601.x",
@@ -330,7 +419,14 @@
     "metadata_source": "https://api.crossref.org/works/10.1111/j.1468-2508.2007.00601.x",
     "citation_key": "gaines2007",
     "content_source": "https://fbaum.unc.edu/teaching/articles/JoP-2007-Gaines.pdf",
-    "validation": "Published article first page, abstract and introduction: factual beliefs versus interpretations."
+    "validation": "Published article first page, abstract and introduction: factual beliefs versus interpretations.",
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://fbaum.unc.edu/teaching/articles/JoP-2007-Gaines.pdf",
+      "evidence": "Published title page and pp. 957–958: factual beliefs, interpretations, and opinions are distinguished.",
+      "supported_claim": "Accurate factual beliefs need not produce agreement about their implications.",
+      "status": "verified"
+    }
   },
   {
     "DOI": "10.1017/s0022381612000187",
@@ -381,18 +477,32 @@
     "metadata_source": "https://api.crossref.org/works/10.1017/S0022381612000187",
     "citation_key": "jerit2012",
     "content_source": "https://bpb-us-e1.wpmucdn.com/sites.dartmouth.edu/dist/d/2388/files/2022/04/JOP_2012.pdf",
-    "validation": "Author-hosted published article: title page and abstract; topic variation in partisan perceptual bias."
+    "validation": "Author-hosted published article: title page and abstract; topic variation in partisan perceptual bias.",
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://bpb-us-e1.wpmucdn.com/sites.dartmouth.edu/dist/d/2388/files/2022/04/JOP_2012.pdf",
+      "evidence": "Published title page and discussion of politically congenial topics and information environments, pp. 672–674.",
+      "supported_claim": "Knowledge gaps and selective learning vary across political topics.",
+      "status": "verified"
+    }
   },
   {
     "citation_key": "hansen2004",
     "title": "Deliberative Democracy and Opinion Formation",
-    "author": "Kasper M\u00f8ller Hansen",
+    "author": "Kasper Møller Hansen",
     "year": 2004,
     "publisher": "Syddansk Universitetsforlag (University Press of Southern Denmark)",
     "metadata_source": "https://researchprofiles.ku.dk/en/publications/deliberative-democracy-and-opinion-formation/",
     "content_source": "https://www.kaspermhansen.eu/Work/Hansen2004.pdf",
     "checked": "2026-10-10",
-    "validation": "Institutional bibliographic record and author-hosted book checked; section 6.5, Table 6.8 and its interpretation inspected, with local 2003 draft as cross-check. Existing entries in dp_learning and dp_nireland consulted."
+    "validation": "Institutional bibliographic record and author-hosted book checked; section 6.5, Table 6.8 and its interpretation inspected, with local 2003 draft as cross-check. Existing entries in dp_learning and dp_nireland consulted.",
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://www.kaspermhansen.eu/Work/Hansen2004.pdf",
+      "evidence": "Section 6.5, printed pp. 174–181, especially Table 6.8; University of Copenhagen author record verifies 2004, author, title, and publisher.",
+      "supported_claim": "Prior selective learning analysis and item-direction interpretations in Denmark.",
+      "status": "verified"
+    }
   },
   {
     "citation_key": "democrats2016",
@@ -403,7 +513,14 @@
     "url": "https://www.presidency.ucsb.edu/documents/2016-democratic-party-platform",
     "verified_on": "2026-10-10",
     "verification": "Opened archived full original platform at American Presidency Project; checked title, party, date and ACA policy language",
-    "claim": "Supports retaining and expanding ACA"
+    "claim": "Supports retaining and expanding ACA",
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://www.presidency.ucsb.edu/documents/2016-democratic-party-platform",
+      "evidence": "Archived original platform, July 21, 2016; Securing Universal Health Care and ACA defense passages.",
+      "supported_claim": "Democratic platform supports retaining and expanding ACA protections.",
+      "status": "verified"
+    }
   },
   {
     "citation_key": "republicans2016",
@@ -414,7 +531,14 @@
     "url": "https://www.presidency.ucsb.edu/documents/2016-republican-party-platform",
     "verified_on": "2026-10-10",
     "verification": "Opened archived full original platform at American Presidency Project; checked title, party, date and ACA policy language",
-    "claim": "Calls explicitly for ACA repeal"
+    "claim": "Calls explicitly for ACA repeal",
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://www.presidency.ucsb.edu/documents/2016-republican-party-platform",
+      "evidence": "Archived original platform, July 18, 2016; health-care section explicitly calls for repeal.",
+      "supported_claim": "Republican platform supports ACA repeal.",
+      "status": "verified"
+    }
   },
   {
     "citation_key": "fishkin2005",
@@ -431,7 +555,14 @@
     "doi": "10.1057/palgrave.ap.5500121",
     "url": "https://link.springer.com/article/10.1057/palgrave.ap.5500121",
     "verified_on": "2026-10-10",
-    "verification": "Springer original article page: title, authors, volume, pages, publication year, DOI and abstract; issue corroborated by original Political Studies reference list."
+    "verification": "Springer original article page: title, authors, volume, pages, publication year, DOI and abstract; issue corroborated by original Political Studies reference list.",
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://link.springer.com/article/10.1057/palgrave.ap.5500121",
+      "evidence": "Publisher authors, title, Acta Politica 40, pp. 284–298 (2005), DOI and abstract; event procedures corroborated by Andersen and Hansen and Luskin et al.",
+      "supported_claim": "Deliberative Polling combines public sampling with informed discussion.",
+      "status": "verified"
+    }
   },
   {
     "citation_key": "luskin2014",
@@ -450,6 +581,187 @@
     "doi": "10.1111/j.1467-9248.2012.01005.x",
     "url": "https://journals.sagepub.com/doi/10.1111/j.1467-9248.2012.01005.x",
     "verified_on": "2026-10-10",
-    "verification": "Sage original article page: all authors, title, volume/issue, pages and issue date March2014 (online December2012), abstract identifies Omagh school debate."
+    "verification": "Sage original article page: all authors, title, volume/issue, pages and issue date March2014 (online December2012), abstract identifies Omagh school debate.",
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9248.2012.01005.x",
+      "evidence": "Publisher title, four authors, Political Studies 62(1), pp. 116–135, March 2014 issue date; online-first date is December 2012. Abstract identifies the Omagh event.",
+      "supported_claim": "Northern Ireland school-policy deliberation across Catholic–Protestant divisions.",
+      "status": "verified"
+    }
+  },
+  {
+    "citation_key": "luskin2002",
+    "bibliography": {
+      "entry_type": "article",
+      "author": "Luskin, Robert C. and Fishkin, James S. and Jowell, Roger",
+      "title": "Considered Opinions: Deliberative Polling in Britain",
+      "journal": "British Journal of Political Science",
+      "year": "2002",
+      "volume": "32",
+      "number": "3",
+      "pages": "455--487",
+      "doi": "10.1017/s0007123402000194"
+    },
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://www.cambridge.org/core/journals/british-journal-of-political-science/article/abs/considered-opinions-deliberative-polling-in-britain/9CA53EBEDC6A0C5A39F92A9D991DD4A3",
+      "evidence": "Publisher authors, title, journal 32(3), pp. 455–487, 2002 and DOI; abstract explicitly discusses acquisition of factual information.",
+      "supported_claim": "Factual learning in the first British Deliberative Poll.",
+      "status": "verified"
+    }
+  },
+  {
+    "citation_key": "fishkin2021",
+    "bibliography": {
+      "entry_type": "article",
+      "author": "Fishkin, James and Siu, Alice and Diamond, Larry and Bradburn, Norman",
+      "title": "Is Deliberation an Antidote to Extreme Partisan Polarization? {R}eflections on ``{America} in One Room''",
+      "journal": "American Political Science Review",
+      "year": "2021",
+      "volume": "115",
+      "number": "4",
+      "pages": "1464--1481",
+      "doi": "10.1017/S0003055421000642"
+    },
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://www.cambridge.org/core/journals/american-political-science-review/article/is-deliberation-an-antidote-to-extreme-partisan-polarization-reflections-on-america-in-one-room/5DEFB6F8D944ECDE77A5E80C3346D4DE",
+      "evidence": "Publisher author order, title, APSR 115(4), pp. 1464–1481, 2021, DOI; abstract and event-design section.",
+      "supported_claim": "America in One Room national sample and discussion of competing policy proposals.",
+      "status": "verified"
+    }
+  },
+  {
+    "citation_key": "mutz2002cross",
+    "bibliography": {
+      "entry_type": "article",
+      "author": "Mutz, Diana C.",
+      "title": "Cross-Cutting Social Networks: Testing Democratic Theory in Practice",
+      "journal": "American Political Science Review",
+      "year": "2002",
+      "volume": "96",
+      "number": "1",
+      "pages": "111--126",
+      "doi": "10.1017/S0003055402004264"
+    },
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://www.cambridge.org/core/journals/american-political-science-review/article/abs/crosscutting-social-networks-testing-democratic-theory-in-practice/2E570E31F3BB84B723CEF2A48A3C6741",
+      "evidence": "Publisher author, title, APSR 96(1), pp. 111–126, March 2002 issue and DOI. Web online date of 2004 is not the issue year. Abstract identifies awareness of reasons for opposing views.",
+      "supported_claim": "Political discussion networks and awareness of opposing rationales.",
+      "status": "verified"
+    }
+  },
+  {
+    "citation_key": "luskin2022distortions",
+    "bibliography": {
+      "entry_type": "article",
+      "author": "Luskin, Robert C. and Sood, Gaurav and Fishkin, James S. and Hahn, Kyu S.",
+      "title": "Deliberative Distortions? {Homogenization}, Polarization, and Domination in Small Group Discussions",
+      "journal": "British Journal of Political Science",
+      "year": "2022",
+      "volume": "52",
+      "number": "3",
+      "pages": "1205--1225",
+      "doi": "10.1017/S0007123421000168"
+    },
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A558DD331DA27A083672F5670316E936/S0007123421000168a.pdf/deliberative_distortions_homogenization_polarization_and_domination_in_small_group_discussions.pdf",
+      "evidence": "Published PDF title page, four authors, BJPS 52, pp. 1205–1225, DOI, 2022 and definitions on pp. 1205–1206; issue 3 corroborated by author publication listing.",
+      "supported_claim": "Homogenization, polarization, and domination are attitude outcomes distinct from factual learning. No numerical result is borrowed.",
+      "status": "verified"
+    }
+  },
+  {
+    "citation_key": "shen2025",
+    "bibliography": {
+      "entry_type": "article",
+      "author": "Shen, Lucas and Sood, Gaurav and Weitzel, Daniel",
+      "title": "A Measurement Gap? {Effect} of Survey Instrument and Scoring on the Partisan Knowledge Gap",
+      "journal": "Public Opinion Quarterly",
+      "year": "2025",
+      "volume": "89",
+      "number": "3",
+      "pages": "812--836",
+      "doi": "10.1093/poq/nfaf044"
+    },
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "https://academic.oup.com/poq/article/89/3/812/8340282",
+      "evidence": "Publisher author order, exact published title, POQ 89(3), pp. 812–836, DOI and 2025 issue; abstract and survey-experiment sections.",
+      "supported_claim": "Survey instrument and scoring affect measured partisan knowledge gaps.",
+      "status": "verified"
+    }
+  },
+  {
+    "citation_key": "sood2026arguments",
+    "bibliography": {
+      "entry_type": "unpublished",
+      "author": "Sood, Gaurav and Luskin, Robert C. and Fishkin, James S.",
+      "title": "How Can You Think That? {Deliberation} and the Learning of Opposing Arguments",
+      "year": "2026",
+      "note": "Working paper, September revision",
+      "url": "https://github.com/soodoku/dp_nireland"
+    },
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "../dp_nireland/ms/main.tex",
+      "repository_url": "https://github.com/soodoku/dp_nireland",
+      "head_commit": "8b7a00b6ab5443f2d1ad47bd05ae57881dc412e4",
+      "source_sha256": "3719fa53be4472daf4cc54c3c0417f821dd84dc7d21446e65e6b19b46f50d9d4",
+      "source_equals_head": true,
+      "evidence": "September 2026 working paper; title page, abstract, measurement and discussion sections.",
+      "supported_claim": "Open-ended supporting/opposing reasons; distinction between recognizing an argument and accepting it.",
+      "status": "verified_local_primary_source",
+      "access_note": "Local author manuscript inspected. Browser could not retrieve pinned GitHub source. Public author website confirms project and coauthors, but some linked PDFs are older versions; cited year denotes the consulted working version, not publication."
+    }
+  },
+  {
+    "citation_key": "luskin2026learning",
+    "bibliography": {
+      "entry_type": "unpublished",
+      "author": "Luskin, Robert C. and Sood, Gaurav and Fishkin, James S.",
+      "title": "Deliberation and Learning: Evidence From {Deliberative Polls}",
+      "year": "2026",
+      "note": "Working paper, version consulted October 10, 2026",
+      "url": "https://github.com/soodoku/dp_learning"
+    },
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "../dp_learning/ms/main.Rmd",
+      "repository_url": "https://github.com/soodoku/dp_learning",
+      "head_commit": "12ce0739ca9bd86617e29c84304238bfb45e3772",
+      "source_sha256": "f56e8d65a2df2960ff21b9ca56237f5ac34aec20312b707397bdd098019173da",
+      "source_equals_head": false,
+      "evidence": "Undated working draft, current source consulted October 10, 2026; YAML authors/title and introduction. The only source-file difference from HEAD is the repository URL.",
+      "supported_claim": "Comparative factual-learning question; no numerical estimate borrowed.",
+      "status": "verified_local_primary_source",
+      "access_note": "Local author manuscript inspected. Browser could not retrieve pinned GitHub source. Public author website confirms project and coauthors, but some linked PDFs are older versions; cited year denotes the consulted working version, not publication."
+    }
+  },
+  {
+    "citation_key": "luskin2026misinformation",
+    "bibliography": {
+      "entry_type": "unpublished",
+      "author": "Luskin, Robert C. and Sood, Gaurav",
+      "title": "Deliberation and Misinformation",
+      "year": "2026",
+      "note": "Working paper, version consulted October 10, 2026",
+      "url": "https://github.com/soodoku/dp_misinformation"
+    },
+    "revalidation": {
+      "checked": "2026-10-10",
+      "source": "../dp_misinformation/ms/main.tex",
+      "repository_url": "https://github.com/soodoku/dp_misinformation",
+      "head_commit": "e41960560ea9848528b6db8df6398c0ca6bc6a07",
+      "source_sha256": "823f71b90d9e4b40c6b7e85acfae6910a7987dfdc691d05022d1f45726213533",
+      "source_equals_head": true,
+      "evidence": "Undated working draft, current source consulted October 10, 2026; title page, abstract, data and transition sections.",
+      "supported_claim": "Wrong/right/nonanswer transitions; older data combine explicit DK and no answer.",
+      "status": "verified_local_primary_source",
+      "access_note": "Local author manuscript inspected. Browser could not retrieve pinned GitHub source. Public author website confirms project and coauthors, but some linked PDFs are older versions; cited year denotes the consulted working version, not publication."
+    }
   }
 ]

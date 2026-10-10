@@ -19,21 +19,44 @@ inventory <- jsonlite::read_json("metadata/item_inventory.json",
 labels <- c(
   "uk-crime-1994" = "Britain: crime (1994)",
   "uk-eu-1995" = "Britain: EU (1995)",
+  "uk-monarchy-1996" = "Britain: monarchy (1996)",
+  "uk-general-election-1997" = "Britain: general election (1997)",
   "uk-health-1998" = "Britain: health (1998)",
+  "nic-1996" = "US: National Issues Convention (1996)",
+  "cpl-1996" = "Texas: Central Power and Light (1996)",
+  "wtu-1996" = "Texas: West Texas Utilities (1996)",
+  "swepco-1996" = "Texas: Southwestern Electric Power (1996)",
   "australia-republic-1999" = "Australia: republic (1999)",
   "denmark-euro-2000" = "Denmark: euro (2000)",
   "bulgaria-crime-2002" = "Bulgaria: crime (2002)",
+  "new-haven-2004" = "New Haven: airport and tax sharing (2002)",
   "btp-national-2003" = "US: online foreign policy (2003)",
   "nic2-2003" = "US: foreign policy (2003)",
   "btp-general-election-2004" = "US: election (2004)",
+  "btp-online-primaries-2004" = "US: online primaries (2004)",
+  "btp-presidential-primaries-2004" = "US: presidential primaries (2004)",
   "btp-health-education-2005" = "US: health/education (2005)",
+  "zeguo-2005" = "China: Zeguo infrastructure (2005)",
+  "marousi-2006" = "Greece: Marousi mayoral selection (2006)",
   "btp-2007" = "US: citizenship (2007)",
   "northern-ireland-2007" = "Northern Ireland: schools (2007)",
   "vermont-energy-2007" = "Vermont: energy (2007)",
   "san-mateo-2008" = "San Mateo: housing (2008)",
+  "tomorrows-europe-2007" = "EU: Tomorrow's Europe (2007)",
+  "europolis-2009" = "EU: Europolis (2009)",
+  "michigan-2009" = "Michigan: economy and budget (2009)",
+  "california-whats-next-2011" = "California: government reform (2011)",
   "america-in-one-room-2019" = "US: America in One Room (2019)",
+  "a1r-climate-2021" = "US: America in One Room, climate (2021)",
   "amr-2024" = "Multinational: antibiotics (2024)"
 )
+stopifnot(
+  !anyDuplicated(names(labels)), !anyDuplicated(unname(labels)),
+  all(inventory$poll_id %in% names(labels)),
+  all(est$poll_id %in% names(labels)),
+  all(registry$poll_id %in% names(labels))
+)
+analysis_polls <- names(labels)[names(labels) %in% est$poll_id]
 select_spec <- function(x, spec = "primary", rule = "explicit_dk",
                         construct = "policy") {
   selected <- x$specification == spec & x$missing_rule == rule &
@@ -43,15 +66,19 @@ select_spec <- function(x, spec = "primary", rule = "explicit_dk",
 primary <- select_spec(est)
 d <- select_spec(diag)
 polls <- names(labels)[names(labels) %in% primary$poll_id]
-fmt <- function(x) ifelse(is.na(x), "--", sprintf("%.1f", x))
+fmt <- function(x) {
+  text <- ifelse(is.na(x), "--", sprintf("%.1f", x))
+  text[text == "-0.0"] <- "0.0"
+  text
+}
 get_value <- function(poll, metric, column = "estimate", x = primary) {
   row <- x[x$poll_id == poll & x$metric == metric, ]
   stopifnot(nrow(row) == 1L)
   row[[column]]
 }
-ci <- function(poll, x = primary) {
-  lo <- get_value(poll, "difference", "lower", x)
-  hi <- get_value(poll, "difference", "upper", x)
+ci <- function(poll, x = primary, metric = "difference") {
+  lo <- get_value(poll, metric, "lower", x)
+  hi <- get_value(poll, metric, "upper", x)
   if (is.na(lo)) "--" else paste0("[", fmt(lo), ", ", fmt(hi), "]")
 }
 write_tab <- function(name, align, header, rows) {
@@ -62,7 +89,7 @@ write_tab <- function(name, align, header, rows) {
   ), file.path("tabs", paste0(name, ".tex")))
 }
 row_text <- function(...) paste(..., sep = " & ")
-gain_rows <- level_rows <- support_rows <- character()
+gain_rows <- level_rows <- support_rows <- gap_rows <- character()
 for (poll in polls) {
   counts <- d[d$poll_id == poll, ]
   gain_rows <- c(gain_rows, row_text(
@@ -79,6 +106,10 @@ for (poll in polls) {
     labels[poll], counts$resample, counts$n_units,
     counts$invalid_draws, ifelse(counts$sparse_support, "Yes", "No")
   ))
+  gap_rows <- c(gap_rows, row_text(
+    labels[poll], fmt(get_value(poll, "gap_pre")),
+    fmt(get_value(poll, "gap_post")), ci(poll, metric = "gap_post")
+  ))
 }
 write_tab(
   "comparative_gains", "lrrrrrl",
@@ -88,6 +119,10 @@ write_tab(
 write_tab(
   "comparative_levels", "lrrrr",
   "Study & C pre & C post & U pre & U post", level_rows
+)
+write_tab(
+  "comparative_gaps", "lrrl",
+  "Study & Gap before & Gap after & 95\\% interval after", gap_rows
 )
 write_tab(
   "comparative_support", "llrrr",
@@ -143,6 +178,10 @@ macros <- c(
   niDifference = fmt(get_value("northern-ireland-2007", "difference")),
   niLow = fmt(get_value("northern-ireland-2007", "difference", "lower")),
   niHigh = fmt(get_value("northern-ireland-2007", "difference", "upper")),
+  dkGapPre = fmt(get_value("denmark-euro-2000", "gap_pre")),
+  dkGapPost = fmt(get_value("denmark-euro-2000", "gap_post")),
+  niGapPre = fmt(get_value("northern-ireland-2007", "gap_pre")),
+  niGapPost = fmt(get_value("northern-ireland-2007", "gap_post")),
   usGainC = fmt(get_value("america-in-one-room-2019", "gain_c")),
   usGainU = fmt(get_value("america-in-one-room-2019", "gain_u")),
   acaPolicyDiff = fmt(get_value("america-in-one-room-2019", "difference",
@@ -165,6 +204,18 @@ macros <- c(
   )),
   partyGainC = fmt(get_value("america-in-one-room-2019", "gain_c", x = party)),
   partyGainU = fmt(get_value("america-in-one-room-2019", "gain_u", x = party)),
+  partyGapPre = fmt(get_value("america-in-one-room-2019", "gap_pre",
+    x = party
+  )),
+  partyGapPost = fmt(get_value("america-in-one-room-2019", "gap_post",
+    x = party
+  )),
+  partyGapLow = fmt(get_value("america-in-one-room-2019", "gap_post", "lower",
+    x = party
+  )),
+  partyGapHigh = fmt(get_value("america-in-one-room-2019", "gap_post", "upper",
+    x = party
+  )),
   partyDifference = fmt(get_value("america-in-one-room-2019", "difference",
     x = party
   )),
@@ -180,7 +231,7 @@ writeLines(
   "tabs/comparative_macros.tex"
 )
 sensitivity_rows <- character()
-for (poll in names(labels)) {
+for (poll in analysis_polls) {
   values <- lapply(c("expanded", "canonical", "substantive_only"), function(s) {
     x <- if (s == "expanded") {
       select_spec(est, spec = s)
@@ -244,7 +295,7 @@ axis_labels <- c(
 )
 stopifnot(all(registry$axis %in% names(axis_labels)))
 coding_rows <- character()
-for (poll in names(labels)) {
+for (poll in analysis_polls) {
   r <- registry[registry$poll_id == poll & registry$construct == "policy", ]
   r <- r[order(r$item_id), ]
   coding_rows <- c(coding_rows, paste0(
@@ -338,6 +389,7 @@ writeLines(c(
   "\\midrule\\endhead", coding_rows, "\\bottomrule", "\\end{longtable}"
 ), "tabs/comparative_registry.tex")
 coverage <- dplyr::count(inventory, poll_id, name = "inventory_items")
+coverage <- coverage[order(labels[coverage$poll_id]), ]
 mapped <- registry[registry$construct == "policy", ]
 coverage$primary_items <- vapply(coverage$poll_id, function(p) {
   sum(mapped$poll_id == p & mapped$specification == "primary")
@@ -348,19 +400,19 @@ coverage$expanded_items <- vapply(coverage$poll_id, function(p) {
 readr::write_csv(coverage, file.path(out, "inventory_coverage.csv"))
 coverage_rows <- vapply(seq_len(nrow(coverage)), function(i) {
   row_text(
-    escape_tex(coverage$poll_id[i]), coverage$inventory_items[i],
+    escape_tex(labels[coverage$poll_id[i]]), coverage$inventory_items[i],
     coverage$primary_items[i], coverage$expanded_items[i]
   )
 }, character(1))
 writeLines(c(
-  "\\begin{longtable}{lrrr}",
+  "\\begin{longtable}{>{\\raggedright\\arraybackslash}p{8.5cm}rrr}",
   paste0(
     "\\caption{Full retained inventory and adjudicated coverage.}",
     "\\label{tab:coverage}\\\\"
   ),
-  "\\toprule Study identifier & Inventory & Primary & Expanded total \\\\",
+  "\\toprule Study & Inventory & Primary & Expanded total \\\\",
   "\\midrule\\endfirsthead",
-  "\\toprule Study identifier & Inventory & Primary & Expanded total \\\\",
+  "\\toprule Study & Inventory & Primary & Expanded total \\\\",
   "\\midrule\\endhead", paste0(coverage_rows, " \\\\"),
   "\\bottomrule", "\\end{longtable}"
 ), "tabs/comparative_coverage.tex")

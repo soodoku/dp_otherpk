@@ -1,0 +1,58 @@
+{
+  "source": "Former sibling directory ../otherpk",
+  "preserved_on": "2026-10-10",
+  "archive": "otherpk-legacy.tar.gz",
+  "archive_sha256": "2fe0bea29d2212cd5610b9aad448aca5b99f6077e111b13e3159f1048b6a70be",
+  "files": [
+    {
+      "path": "otherpk/.project",
+      "bytes": 440,
+      "sha256": "eb132ca83278a0e1e7b0c8202cab221c18820d636726dc61885667dd2e5587d4"
+    },
+    {
+      "path": "otherpk/APSA 11.doc",
+      "bytes": 28672,
+      "sha256": "9a0f153d629f7da84b1223a7535484122c8556b4dc7aedd1ed246838edbc5eb2"
+    },
+    {
+      "path": "otherpk/Awful Truth APSA 11.doc",
+      "bytes": 28672,
+      "sha256": "1e35069aef43e3a8aeb76e2b0b90b47984228e7abd9c09c5ace87866bdb6716c"
+    },
+    {
+      "path": "otherpk/denmark.R",
+      "bytes": 3585,
+      "sha256": "bfd9f567f6ad86f10c3394421c2214f43190b8230c3dde88af9525f80300f034"
+    },
+    {
+      "path": "otherpk/diagnostic.txt",
+      "bytes": 69,
+      "sha256": "ae2984ad5a1a7be2d1e7814607486d37726170f7fc970bf92056d10dc5db8b85"
+    },
+    {
+      "path": "otherpk/lit.review/Same Facts KUKLINSKI.pdf",
+      "bytes": 165054,
+      "sha256": "f125be73aa89c4c3e1809183aa0c9a767555972d47a55698096085c8ea1d17f7"
+    },
+    {
+      "path": "otherpk/lit.review/learning.from.others.pdf",
+      "bytes": 849167,
+      "sha256": "929452720e0f0956381fbf0606b86b22d70adce3e7da89a7301f7cd654d978fd"
+    },
+    {
+      "path": "otherpk/otherpk.fin.tabs.docx",
+      "bytes": 9818,
+      "sha256": "a057283969558b5379a6134d55a6f337e90e219fa7e10c9a4a2e04732ed42159"
+    },
+    {
+      "path": "otherpk/res/tab1.know.csv",
+      "bytes": 2032,
+      "sha256": "004a4f0352417fb28973a43111db7a5a9a7615ef3b8ea8c09d23a441ac42e7b1"
+    },
+    {
+      "path": "otherpk/the_other_side.doc",
+      "bytes": 29184,
+      "sha256": "8f31220a257b1bc9c5c06dbd1523dc500d48d0b66750927dfd96e5c703d56d52"
+    }
+  ]
+}

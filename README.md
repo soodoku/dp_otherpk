@@ -3,9 +3,13 @@
 [Manuscript](ms/main.pdf) · [LaTeX source](ms/main.tex) · [References](ms/references.bib)
 
 A comparative analysis of congenial and uncongenial factual accuracy across
-Deliberative Polls, with separate policy-position and party-alignment measures. The paper contains the data description, research
-design, coding protocol, sensitivity analyses, and limitations. Its appendix
-follows the references. Historical writing remains in `../otherpk`.
+Deliberative Polls, with separate policy-position and party-alignment measures.
+The paper distinguishes gains on facts favoring the other side, their difference
+from gains on facts favoring one's own side, and the knowledge gap remaining
+afterward. The paper contains the data description, research design, coding
+protocol, sensitivity analyses, and limitations. Its appendix
+follows the references. The [historical archive](archive/README.md) preserves
+the original writing, code, and literature, with a review of outstanding ideas.
 
 ## Reproduce
 
@@ -44,6 +48,7 @@ uv run --with pyarrow==23.0.1 scripts/inventory.py
 - `R/` and `scripts/`: classification, statistical analysis, and manuscript build.
 - `coding/`: original item packet, independent coding records, and exposure notes.
 - `metadata/`: source inventory and reference-validation evidence.
+- `archive/`: unchanged legacy files, checksums, and substantive comparison.
 - `output/`: generated respondent-item records, paired data, estimates and manifests.
 - `tabs/`, `figs/`, `ms/`: generated exhibits and manuscript sources.
 
