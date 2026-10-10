@@ -1,0 +1,41 @@
+\section{Data and Research Design}
+
+Deliberative Polls combine a recruited public sample with opportunities to consider competing information and discuss public choices \citep{fishkin2005}. The unit of analysis is a respondent answering a particular factual question before and after a Deliberative Poll. We begin with the complete retained item inventory, rather than selecting events from their learning results. The archive contains \inventoryItems{} questions in \inventoryStudies{} studies. Historical writing in the project supplies the comparative question; archived questionnaires, briefing materials, answer keys, and respondent files supply the measurement. We use one respondent namespace per study and retain verified attendees. Recruitment measurements precede the event; the second measurement is the immediate post-deliberation questionnaire. These windows can include briefing exposure and repeated testing as well as discussion.
+
+\subsection{Coding the relationship between a person and a fact}
+
+Each item receives a correct proposition, an explicit policy axis, a direction on that axis, and a source-based rationale. A direction requires a recognizable argument, benefit, cost, or objection. It does not require the fact to settle the entire policy dispute. The baseline questionnaire then locates the respondent on that same axis. A fact supporting the respondent's position is congenial; one challenging it is uncongenial. Undecided respondents, scale midpoints, missing answers, and unresolved item meanings remain \emph{cannot classify}. They are excluded from the directional contrast, but their records and reasons are retained. An analyst's inability to classify a relation differs from a respondent's don't-know answer to a classified question.
+
+For example, the US health-care item asks about protections provided by the Affordable Care Act. Those protections supply an argument for retaining the law. The baseline item asks whether to repeal it, so its response scale is reversed for a retention axis. In Northern Ireland, the curriculum entitlement supplies a reason for sharing courses across schools. We use baseline support for pupils taking unavailable courses at another school, not religious identity, to locate respondents on that policy axis. In Australia, we use support for the particular referendum proposal, not generic enthusiasm for a republic.
+
+Group alignment is a separate classification. For the US health-care item, the archived Democratic and Republican platforms document opposing positions on retaining the law \citep{democrats2016,republicans2016}. We therefore report an additional comparison defined by baseline party identification. Independents and respondents without a major-party identification remain unclassified for that comparison. This coding concerns a fact's implications for a party's stated position; it does not claim that every member personally holds that position. We do not infer an analogous Catholic--Protestant policy division from religious identity alone.
+
+Two independent model-assisted passes screened the full inventory. Their records preserve rationale, source locators, uncertainty, and disagreements. An initial adjudication fixed a primary mapping and a broader sensitivity mapping before inspection of the new comparative outcomes. A subsequent source audit moved a flawed Vermont item out of the primary set; the appendix documents that retrospective correction. The primary mapping uses the clearest source-supported arguments and matched baseline questions; the expanded mapping admits additional interpretation-dependent arguments. Agreement between model passes is not human validation. Moreover, this is retrospective work: the earlier Danish analysis was already known, and some codebook searches exposed aggregate item summaries. No initial subgroup knowledge gap or observed learning contrast determines an item's direction. The coding records disclose these exposures, and all intervals condition on the chosen mapping.
+
+\subsection{Comparing learning on the same facts}
+
+Let $Y_{ijt}$ indicate a correct answer by respondent $i$ to item $j$ at time $t$, and let $R_{ij}$ denote the relation fixed from baseline. For each item and relation $r$, we retain respondents with both pre- and post-event scores and estimate
+\[
+\widehat\Delta_{jr}
+=\frac{1}{n_{jr}}\sum_{i:R_{ij}=r}
+  (Y_{ij,\mathrm{post}}-Y_{ij,\mathrm{pre}}).
+\]
+The study-level gain is the equal-weighted mean over the same set $J$ of items with observed congenial and uncongenial respondents:
+\[
+\widehat L_r=\frac{1}{|J|}\sum_{j\in J}\widehat\Delta_{jr},
+\qquad
+\widehat D=\widehat L_U-\widehat L_C.
+\]
+Levels use the same paired respondents within each item. Equal item weights prevent a difference in question composition from defining the congenial--uncongenial comparison. They do not remove differences between the respondents on each side.
+
+Pairing here refers to the same respondent answering the same question at two times. It does not generally mean that the same person contributes to both relation categories. A battery containing only facts favoring school collaboration still permits a comparison between initial supporters and opponents. Discarding such a battery would unnecessarily restrict the comparative inquiry. Its limitation is substantive: relation and baseline group may be completely aligned, so a difference in gains can reflect any difference between those groups. The Danish complete-battery, equally weighted supporter--opponent analysis remains a separate within-person sensitivity analysis.
+
+We report study-specific estimates rather than treating the studies as a random sample of political disputes. Recruitment, topics, instruments, modes, and event formats differ. Each study receives its own uncertainty interval; we do not interpret the number of positive estimates as a formal test across independent replications. Explicit don't-knows receive zero credit. Undocumented source blanks and absent waves are missing. Sensitivity analyses use the archive's canonical scoring and, separately, substantive responses only. The latter conditions on willingness to answer and can change the sample.
+
+Bootstrap intervals resample complete discussion groups where group identifiers are available for the analytic sample; otherwise they resample respondents and leave discussion dependence unaddressed. All of a resampled respondent's item pairs travel together. We use \comparativeDraws{} draws and percentile 95\% intervals, holding the eligible item set fixed within a specification. The outputs report sparse cells and draws that lack a required item--relation cell. The estimator suppresses intervals for singleton resampling-unit cells or inadequate valid draws. Following the support audit, the manuscript also withholds intervals with fewer than five units in any included relation cell or partially missing discussion-group identifiers. Intervals from few groups warrant particular caution; none incorporates uncertainty in substantive coding.
+
+\subsection{What the comparison identifies}
+
+A positive $L_U$ establishes increased reported accuracy on facts coded as uncongenial. A positive $D$ establishes relative catch-up. Neither identifies a causal effect of deliberation: attendees are selected, exposure is bundled, the comparison groups are not randomized to congeniality, and testing itself may change answers. Nor does relative catch-up establish a special willingness to learn uncomfortable facts.
+
+Initial accuracy matters because a binary score leaves unequal room for improvement. If the probability of correcting a wrong answer is $a$ and the probability of losing a correct answer is $\ell$, an item with initial accuracy $p$ has expected gain $a(1-p)-\ell p$. With the same transition probabilities in both categories, the uncongenial-minus-congenial difference is $(a+\ell)(p_C-p_U)$. Thus an initial congenial advantage alone can produce faster uncongenial gains. We report baseline levels alongside changes and use the earlier Danish transition calculation as a diagnostic, not as an identified account of the mechanism.

@@ -1,0 +1,67 @@
+Expanded independent screen A — 10 October 2026
+
+Coverage: all 260 items in metadata/item_inventory.json across 32 polls. This is provisional model-assisted screening, not adjudication, human validation or blinded validation. No other coder output or new generated analyses were inspected.
+
+Exposure: the prior pilot accidentally exposed aggregate Northern Ireland report results. In this expanded pass, AMR harmonized-codebook.pdf pages 32–34 unexpectedly displayed pooled response summaries, and keyword searches of CPL/WTU/SWEPCO codebook.txt returned embedded pre/post frequencies. These source-codebook statistics were not used in any direction assignment. The expanded pass did not inspect empirical papers or new report results. After detecting codebook statistics, extraction was restricted to metadata/question wording. General model training exposure cannot be known.
+
+Coding rule: a correct proposition may supply a benefit, harm, constraint, mechanism, feasibility argument or performance signal without proving the entire policy choice. Concrete direct arguments are clear. Endorsements, isolated magnitudes, credentials, partial comparisons and competing interpretations remain interpretation-dependent. Neutral, ambiguous and unknown are retained with reasons. These labels are not derived from respondent answers or learning gaps.
+
+Counts: Counter({'supports': 128, 'challenges': 48, 'neutral': 41, 'ambiguous': 34, 'unknown': 9})
+Confidence: Counter({'interpretation_dependent': 109, 'unclassified': 84, 'clear': 67})
+
+Closest baseline fields and scales are copied from variables.csv/value-labels.csv or original questionnaires. One field is chosen per issue record; alternatives are explicit. A readiness flag only indicates a clear directional argument with a verified field and stored labels; it is not a frozen analysis approval. Source keys remain inherited from the inventory unless the record says otherwise. Papers/reports named by inventory source_reference were not treated as independently inspected evidence.
+
+Priority cases:
+Northern Ireland: t1q14a cross-community partnerships (5-point agreement; anomalous stored 6–8 must be quarantined), t1q11e shared campuses (0 oppose, 5 midpoint, 10 support), t1q11f shared courses (same scale), t1q11a differentiated academic/vocational schools, and t1q15e sixth-form-college conversion. Items 1–4 have clear contact/capacity/curriculum rationales. Item 7 may challenge shared campuses through coordination costs, but is interpretation-dependent. Item 6 supplies a loss-of-sixth-form-funding objection, also interpretation-dependent. Religion is never substituted for a schooling preference.
+US 2019: ACA protections challenge repeal (Q5A) and capital-gains rate disparity supports equal tax treatment (Q4A, not Q2D). Both scales run 0 oppose to 10 favor with 5 midpoint; 77/98/99 are non-substantive. ACA has a documented additional Democratic/Republican bridge. Primary party analysis should use the original party-ID field verified by the parent, not automatically the three-category derived PARTYID3 candidate recorded here. Capital-gains party alignment is only a broader fairness-argument lead; exact platform support for Q4A is not established.
+BTP general election 2004: Iraqi September 11 and WMD facts, Pakistan location and casualties challenge the war-worth-cost claim w4b7 (1 strongly agree to 5 strongly disagree). The two false threat-justification items also have a direct party-position bridge in contemporaneous platforms. The Democratic platform acknowledges disagreement about going to war; do not recode all Democrats as antiwar.
+San Mateo: construction gap and growth support Q1 more housing (1 more, 7 restrict, 4 midpoint); affordability and income composition support Q4 below-market requirements (1 require, 7 market-only, 4 midpoint). Land-use share remains ambiguous. Stored DK is 8 whereas draft questionnaire says 99; preserve and audit both non-substantive codes.
+Vermont: efficiency item 2 concerns halving the annual increase in use, NOT halving total electricity use. Q26 is the verified funding preference (1 increase, 2 same, 3 decrease). Surcharge and renewables-share items remain unresolved because the inventory itself documents unit/denominator disputes. Nuclear and hydro dependence support continuity only conditionally. Stored Q13 is nuclear even though the draft calls it Q14.
+Additional clear candidates occur in Australia republic, BTP 2007 democratic reforms, US 2005 healthcare, Bulgaria police violence/evidence safeguards, New Haven revenue sharing, Europolis visa overstays, UK crime and UK health. Individual records retain measurement and source limitations.
+
+Balance: only Australia republic and Denmark join-euro have both clear supporting and clear challenging facts on the same proposed axis in this screen. Several more axes become bidirectional only when interpretation-dependent cues are included. A one-sided battery remains useful for between-person congruence comparisons, but cannot identify a within-person C/U contrast on that axis. Do not manufacture a contrary direction or discard a useful case solely for this reason.
+
+Important unresolved source work: NIC1996 AFDC1 description says AFDC receipt while its question says single-parent households; UK1997 minimum-wage keys/endpoints conflict; California budget supermajority key needs date review; AMR item4 questionnaire/options conflict and its long-file baseline Time selector needs verification; UK monarchy Q/G wave mapping unresolved; Michigan/New Haven dictionaries have empty labels, requiring numbered-question crosswalk checks; some Michigan/California/Europolis items have departure-only or later entry; AU stored approve1 codes reverse the draft form; BTP online and presidential-primary datasets must not be counted as independent samples without a participant audit.
+
+Dated primary group-position evidence retrieved 10 October 2026:
+2016 Democratic platform: https://www.presidency.ucsb.edu/documents/2016-democratic-party-platform
+2016 Republican platform: https://www.presidency.ucsb.edu/documents/2016-republican-party-platform
+2019-01-09 DNC ACA defense: https://democrats.org/democrats-take-action-to-protect-people-with-pre-existing-conditions-expand-access-to-affordable-health-care/
+2004 Democratic platform: https://www.presidency.ucsb.edu/documents/2004-democratic-party-platform
+2004 Republican platform: https://www.presidency.ucsb.edu/documents/2004-republican-party-platform
+
+Local verification: JSON parsed; all 260 inventory keys present exactly once; all 32 polls represented; direction/strength enums valid; every record has item-specific rationale and source locator; baseline field presence verified against source metadata; axis summaries regenerated from records; no empirical estimate computed.
+
+Per-poll confidence counts:
+a1r-climate-2021: {'unclassified': 4, 'interpretation_dependent': 2, 'clear': 2}
+america-in-one-room-2019: {'unclassified': 4, 'interpretation_dependent': 1, 'clear': 2}
+amr-2024: {'interpretation_dependent': 2, 'clear': 3, 'unclassified': 1}
+australia-republic-1999: {'interpretation_dependent': 2, 'clear': 5, 'unclassified': 5}
+btp-2007: {'clear': 2, 'interpretation_dependent': 5, 'unclassified': 1}
+btp-general-election-2004: {'unclassified': 3, 'clear': 5, 'interpretation_dependent': 1}
+btp-health-education-2005: {'interpretation_dependent': 3, 'clear': 3}
+btp-national-2003: {'interpretation_dependent': 8, 'unclassified': 1, 'clear': 2}
+btp-online-primaries-2004: {'interpretation_dependent': 4, 'clear': 3}
+btp-presidential-primaries-2004: {'interpretation_dependent': 4, 'clear': 3}
+bulgaria-crime-2002: {'interpretation_dependent': 5, 'clear': 2}
+california-whats-next-2011: {'unclassified': 5, 'interpretation_dependent': 2, 'clear': 1}
+cpl-1996: {'interpretation_dependent': 2, 'unclassified': 4, 'clear': 1}
+denmark-euro-2000: {'clear': 4, 'unclassified': 2, 'interpretation_dependent': 3}
+europolis-2009: {'unclassified': 4, 'interpretation_dependent': 3, 'clear': 2}
+marousi-2006: {'unclassified': 4, 'interpretation_dependent': 2, 'clear': 1}
+michigan-2009: {'unclassified': 3, 'interpretation_dependent': 7, 'clear': 1}
+new-haven-2004: {'unclassified': 1, 'interpretation_dependent': 4, 'clear': 3}
+nic-1996: {'unclassified': 9, 'interpretation_dependent': 2}
+nic2-2003: {'interpretation_dependent': 8, 'unclassified': 1, 'clear': 2}
+northern-ireland-2007: {'clear': 4, 'interpretation_dependent': 3}
+san-mateo-2008: {'clear': 6, 'interpretation_dependent': 1, 'unclassified': 1}
+swepco-1996: {'interpretation_dependent': 2, 'unclassified': 2, 'clear': 1}
+tomorrows-europe-2007: {'unclassified': 5, 'interpretation_dependent': 4, 'clear': 2}
+uk-crime-1994: {'unclassified': 5, 'clear': 2}
+uk-eu-1995: {'interpretation_dependent': 3, 'clear': 1, 'unclassified': 1}
+uk-general-election-1997: {'interpretation_dependent': 11, 'unclassified': 4}
+uk-health-1998: {'unclassified': 1, 'clear': 1, 'interpretation_dependent': 4}
+uk-monarchy-1996: {'unclassified': 5, 'interpretation_dependent': 3, 'clear': 1}
+vermont-energy-2007: {'unclassified': 5, 'clear': 1, 'interpretation_dependent': 3}
+wtu-1996: {'interpretation_dependent': 2, 'unclassified': 2, 'clear': 1}
+zeguo-2005: {'interpretation_dependent': 3, 'unclassified': 1}

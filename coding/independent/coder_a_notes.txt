@@ -1,0 +1,33 @@
+# Coder A: provisional model-assisted pilot
+
+The pass contains 23 primary item codes: seven US, nine Denmark and seven Northern Ireland. It is not human validation and is not a blinded validation. The exact model/version was not independently available; no precise model label is asserted.
+
+## Exposure and protocol deviation
+
+At the start of this pass I had the delegated instructions, then read the packet and coding protocol. I did not deliberately inspect respondent data, other coder output, analyses, or paper results. General training exposure cannot be established or ruled out.
+
+After reviewing the original briefings and Denmark questionnaires, I requested permission to inspect a presumed Northern Ireland questionnaire appendix because the packet referenced final-report PDF page 34. That locator actually identifies a results page. Extracting PDF pages 34–36 exposed aggregate T1/T2 knowledge-item results and community-relations summaries. I stopped report access immediately and notified the coordinator. No item-by-community knowledge outcomes or respondent records were accessed. All seven Northern Ireland primary implications had already been reasoned as unknown, but no timestamped pre-exposure code file exists. The exposure cannot be undone and must be reported whenever this pass is used. No reported percentages were used to assign labels, and none appear in the coding rationales.
+
+## Source inspection
+
+- Denmark: original arrival and departure Danish questionnaires, particularly PDF pages 4–7; the retained English draft questionnaire was also read. The fielded sources verify the 2001/2004/2005/2007 year options and coins-only national-side wording. The draft differs on both points. Keys are inherited from the packet; questionnaire inspection does not independently verify historical legal or party-position keys. Danish interpretation is model-assisted, not human translation validation.
+- US: original tabular codebook PK1–PK7 and the corresponding issue briefing sections. The codebook supplies complete wording and choices, not a marked historical answer key. Briefing pages and codebook line locators appear in every record. The immigration briefing estimate is approximately 11 million while the keyed choice is 10 million; the tax briefing states 23.4 percent while the choice is around 20 percent. The Paris briefing uses signing terminology while the item asks about being part of the agreement. These source limitations require historical key review; I did not silently correct them.
+- Northern Ireland: original education briefing; item locators retain packet t1q21–t1q27 because a fielded questionnaire was not independently located. Full substantive propositions for truncated choices are corroborated by the briefing, while exact fielded wording remains a limitation. The accidental report pages are an exposure disclosure, not coding evidence.
+
+PDF text was extracted with `pdftotext -layout`, capturing stderr. Extraction succeeded; the US briefing emitted `Syntax Warning: Invalid Font Weight`. No PDFs were edited. No web or outcome papers were consulted.
+
+## Consequential decisions
+
+Denmark yields two supports, five challenges, one neutral and one ambiguous. Retained tax authority and national coin imagery counter explicitly administered sovereignty/identity concerns. Sanctions and loss of interest-rate authority challenge joining on those dimensions. Becoming part of the ECB has opposing independence and influence readings. The circulation year supplies a timetable without a demonstrated directional implication.
+
+The three Danish party-recommendation items are coded challenges because the keyed recommendation explicitly opposes joining. This is an endorsement-direction code: it does not assume a respondent trusts that party or experiences its position as unwelcome. These items should be separated from policy-consequence items or excluded if endorsement direction falls outside the final construct. Their historical keys still need independent corroboration.
+
+US chamber control is neutral: identifying the controlling party is not a policy evaluation. WTO membership breadth is also neutral. Paris participation is ambiguous because leadership and incomplete-cooperation arguments can run in opposite directions. Immigration magnitude, ACA protections and capital-gains rates remain unknown on the primary party axis because the permitted sources do not validate the necessary historical party mapping. Policy-specific alternatives do not replace that missing evidence.
+
+All seven Northern Ireland primary religious-alignment implications remain unknown. Shared facts about schools, curricula, enrollment, funding or governance do not establish Catholic-versus-Protestant policy preferences. Alternative issue axes are explicitly conditional on measured baseline preferences, and the grammar-school transition rate is descriptive rather than causal evidence for selective schooling.
+
+For person-by-item linkage, all neutral, ambiguous, unknown and not-applicable item codes produce `cannot_classify`, with source-specific reasons retained. They are excluded from primary congenial/uncongenial comparisons. A supports/challenges code still requires a valid measured baseline position; these records do not classify individuals.
+
+## Local verification
+
+The JSON was parsed and checked for 23 unique packet keys, exact coverage, allowed implications, matching primary axes, nonempty required fields, array-valued referent groups, and explicit exposure metadata. Counts: supports 2, challenges 5, neutral 4, ambiguous 2, unknown 10. No empirical estimates were computed.

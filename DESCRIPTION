@@ -1,0 +1,22 @@
+Package: dpotherpk
+Type: Project
+Title: Position-Relevant Knowledge in Deliberative Polls
+Version: 0.0.1
+Authors@R: person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com")
+Description: Builds traceable respondent-by-item classifications for a
+    retrospective study of congenial and uncongenial political knowledge.
+Encoding: UTF-8
+Imports:
+    arrow,
+    digest,
+    dplyr,
+    haven,
+    jsonlite,
+    readr,
+    tibble,
+    withr
+Suggests:
+    lintr,
+    renv,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

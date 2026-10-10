@@ -1,0 +1,41 @@
+# Independent coding pass B
+
+9 October 2026. Model-assisted pilot, not human coding or external validation. The JSON has one record for each of the 23 items in `coding/packets/pilot.json`.
+
+## Exposure and independence
+
+This worker received the coding task, the protocol, the outcome-free packet, and the repository/user workflow instructions. It did not read coder A's output, participant answers, generated outcome summaries, empirical-result papers, or result reports. Directory listings exposed filenames only. The packet contains citations to result papers and brief descriptions of earlier wording corrections; those citations and corrections were visible, but the papers themselves were not opened. Variable metadata exposed names of correctness fields, not their values or distributions.
+
+There was no earlier task-specific source exposure in this worker's conversation before this assignment. General model pretraining cannot be audited or made unseen, so this is not a claim of literature-naive human coding. The assistant identifies as Codex based on the GPT-6 family; the exact serving model identifier is unavailable and is not asserted.
+
+Read sources were the protocol and packet; the Danish arrival questionnaire and retained English questionnaire draft; Northern Ireland's participant education briefing and relevant variable labels; and the America in One Room codebook and participant briefing. PDF text was extracted with `pdftotext -layout`. The US codebook PDF was extracted, while question wording was read from the tab codebook. No PDF was edited. Danish interpretation is model-assisted, not a certified translation. This pass did not obtain external historical platforms or independently revalidate every factual key.
+
+## Decision rule
+
+The object coded is the correct proposition in context. A fact's named group, the direction of a party's recommendation, and the direction of an argument for the respondent's policy position are distinct. Neutral means an observed descriptive fact lacks a directional policy implication under this rubric. Unknown means missing evidence prevents the primary mapping; it is not evidence of neutrality. Ambiguous means identifiable competing interpretations prevent a unique direction.
+
+Only primary `supports` and `challenges` labels can enter a later baseline-person-position derivation of congenial/uncongenial, conditional on a valid person axis. All other primary labels must produce `cannot_classify` and retain their specific reason. Alternative axes are candidate constructs requiring separately measured baseline preferences and adjudication; they must not silently replace primary religion or party identity.
+
+The primary labels are 2 supports, 2 challenges, 4 neutral, 6 ambiguous, and 9 unknown. Four directional items are all Danish. These frequencies are results of this coding pass, not respondent outcomes. They should not be altered to balance an estimand.
+
+## Decisions requiring adjudication
+
+- Danish deficit fines and loss of independent rate setting challenge joining on cost/autonomy grounds; retained tax-setting authority and national coin symbols support it by rebutting specific autonomy/identity concerns. These are limited arguments, not net-welfare claims. In particular, fiscal discipline can have a positive interpretation; retain that caveat and adjudicate rather than count the fine label as established ground truth.
+- Joining the ECB permits both autonomy-loss and influence/continuity interpretations. The planned circulation year is neutral absent an argument connecting a particular date to desirability.
+- The three Danish no endorsements identify party opposition. They do not necessarily make the fact congenial for everyone opposing the euro: recipients may reject the named party as a cue. They are ambiguous on the primary euro-preference axis. An alternative proposition about the party's stated position is directly contradicted by the key but is not a substitute measure of recipient congeniality.
+- Republican Senate and Democratic House control are neutral on policy alignment. Their party referents are preserved separately.
+- The US briefing directly links a keyed ACA protection to an argument against repeal. It also uses lower capital-gains taxation relative to wage income as a reason for equal rates. These support explicit alternative policy axes, but a historical party-position bridge is not supplied by the reviewed documents. Primary party codes remain unknown. A future externally documented bridge should be recorded as new evidence, not silently assumed here.
+- The immigration population estimate supports competing enforcement and disruption frames. Paris nonparticipation likewise permits both collective-coverage objections and leadership arguments. Choosing a smaller answer than the distractors does not establish ideological direction.
+- Northern Ireland has shared educational institutions and overlapping communities. Its briefing supports curriculum collaboration, applied-subject provision, and capacity rationalisation as alternative policy axes. No reviewed source licenses assigning those preferences from religion. All seven primary religious-alignment codes remain unknown.
+
+## Wording and key limitations
+
+The fielded Danish arrival Q7 uses 2001/2004/2005/2007. The retained English draft differs. Fielded Q9 is about coins; the English draft also refers to bills. This pass uses the Danish wording.
+
+Northern Ireland's briefing reconstructs the truncated curriculum answer as at least 24 subjects for pupils aged 14+, including one third academic and one third applied. It describes higher education for about 75% of grammar-school leavers, while the packet's truncated answer starts with university. It specifies a higher per-capita allocation for pupils aged 16+, and governing boards as employers for voluntary grammar or grant-maintained integrated schools. These are briefing-based reconstructions, not a claim that the original administered answer text has been fully recovered. The mixed-enrollment threshold is supplied by the packet; the briefing itself says significant minority and a little less than 10 percent of schools.
+
+US PK3 uses the approximate answer 10 million while its briefing says roughly 11 million. PK6's around 20% corresponds approximately to a briefing figure of 23.4%; this pass neither silently corrects that figure nor validates tax law. PK4's part-of language differs from the briefing's signed language. Historical treaty signature, ratification, and participation on the relevant administration date require separate verification before the key is considered settled. No current treaty status was substituted for the historical task.
+
+## Local validation
+
+Validated JSON parsing, exactly 23 unique `(poll_id, item_id)` pairs matching the packet, axis agreement, allowed primary labels, nonempty rationale/evidence/source-limit fields, referent arrays, valid alternative-axis labels, and existence of cited local source paths. No participant data were needed for these checks.

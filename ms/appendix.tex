@@ -1,0 +1,98 @@
+\section{Coverage and Measurement}
+
+The inventory contains \inventoryItems{} retained factual questions from \inventoryStudies{} studies. Both expanded coding passes cover every item. Table~\ref{tab:coverage} distinguishes the inventory from the adjudicated analysis sets. A zero means that the current source review has not established an eligible directional mapping; it does not mean that respondents learned nothing or that no useful measure could ever be recovered. The complete machine-readable registry retains both coders' judgments and reasons, including neutral, ambiguous, and unresolved items.
+
+Several exclusions concern measurement rather than data volume. Utility questionnaires often ask how important an energy objective is. Low importance does not identify opposition to that objective, so those scales do not supply the negative position needed here. Named-party placement questions can measure knowledge of what parties favor without establishing a fact favorable to those policies. Some studies have promising directional content but no sufficiently matched baseline field in the current adjudication. These remain explicit unresolved leads, rather than disappearing from the inventory.
+
+The Bulgarian crime poll supplies a legal-constraint item about police violence. It is a different event from the Bulgarian poll concerning Roma policy. Reports and briefing materials for the latter exist, but linked respondent-level records have not been established in the retained archive. No Roma comparison is estimated. In Northern Ireland, religious affiliation is available, but neither community membership alone nor a fact about mixed schools establishes a unique policy implication for that community. The main analysis uses the relevant schooling preferences. The separate project on knowledge of arguments concerns a different outcome and is not counted as additional factual-knowledge evidence.
+
+{\small\setstretch{1.0}
+\input{../tabs/comparative_coverage.tex}
+}
+
+\subsection{Item mapping}
+
+Table~\ref{tab:registry} lists every adjudicated policy item, including expanded-only items. The bracketed identifier is the item's suffix in the canonical inventory. P denotes the primary set; E denotes an addition to the expanded set. The expanded comparison includes both. The positive and negative codes refer to the positive policy position stated in the table, not to correct and incorrect knowledge answers. All other baseline values remain unclassified. Source questionnaires and briefing passages, complete coder rationales, and checksum-verified input paths are retained in \path{coding/adjudicated.csv} and the independent coding records.
+
+The table paraphrases historical keys. It does not update the questions to present conditions. The Northern Ireland curriculum paraphrases are completed from the original briefing because the deposited variable labels truncate the alternatives. The US capital-gains item retains the administered approximate rate; its relevance is the briefing's comparison with ordinary wage taxation. The ACA party analysis uses the same factual item as the policy analysis, with baseline \texttt{D1}=Democrat or Republican and the archived platforms as the alignment evidence.
+
+{\small\setstretch{1.0}
+\input{../tabs/comparative_registry.tex}
+}
+
+\subsection{Source corrections and retrospective decisions}
+
+The stored UK crime data reverse the numbering printed in the questionnaire. The source codebook assigns low values to disagreement and high values to agreement with tougher sentencing. We verified that the stored baseline frequencies match those labels and corrected the baseline relation before inspecting the comparative knowledge estimates. Using the printed numbers directly would reverse congeniality. Australia likewise uses the direct response to the specific referendum proposal; similarly named derived variables and generic republican preferences are not substituted.
+
+Two items have substantive source problems. The AMR prevention question has conflicting options in the retained English questionnaire and harmonized codebook. Its directional estimate therefore appears only in the expanded set. Vermont's efficiency-impact question is explicitly described as flawed and excluded by the original final report (PDF p.~25, printed p.~24). The starred questionnaire keys a halving of annual consumption growth, but the briefing attributes that decline jointly to the efficiency program and economic conditions. A targeted audit prompted by the low observed accuracy recovered the report's explicit exclusion. We then restricted the item to a source-flawed sensitivity analysis, retaining the archived key and estimate. This correction occurred after outcome inspection and is not presented as a pre-analysis decision.
+
+San Mateo illustrates a different problem: the released source does not preserve a reliable distinction between explicit don't-knows and source-missing knowledge answers. After the baseline-position exclusions, canonical zero-for-missing scoring retains \sanMateoCanonicalN{} people, while requiring observed paired answers retains \sanMateoN{}. The difference in gains changes from \sanMateoDiff{} points under the primary rule to \sanMateoCanonicalDiff{} under canonical scoring. The reduced sample is reproducible, but it is selected heavily on answer availability. We cannot identify which source blanks were deliberate nonanswers and which arose from earlier processing.
+
+The full screen is model-assisted, not independently validated human coding. The original pilot and prior Danish results were already known. Both expanded passes disclosed exposure to aggregate statistics embedded in source codebooks; the coordinating and independent source reviews also saw UK crime baseline attitude frequencies while checking the reversed codes. Directions were not selected from initial knowledge gaps or new comparative gains. The final UK-EU source correction followed an initial computation whose outcomes had not yet been inspected. All these decisions, including the later Vermont exclusion, are recorded in \path{coding/adjudication.json}. Historical drafts remain unchanged in the separate \texttt{otherpk} archive.
+
+\section{Levels, Uncertainty, and Sensitivity}
+
+Table~\ref{tab:comparative-levels} uses the same paired respondents within each item as the primary gain estimates. Initial congenial advantages are not imposed by construction. In particular, neither the sign nor the size of a pre-event accuracy difference enters substantive coding.
+
+\begin{table}[H]
+\centering\small
+\caption{Accuracy before and after the event on the primary item set.}
+\label{tab:comparative-levels}
+\input{../tabs/comparative_levels.tex}
+\tabnote{Percent correct, with equal item weights. C denotes congenial and U uncongenial. Within each item and relation, pre and post use identical paired respondents. Different items can retain different people.}
+\end{table}
+
+Table~\ref{tab:comparative-support} reports resampling units and failed bootstrap draws. Draws fail when a fixed eligible item loses either relation cell after resampling. Replacing that item with a different battery in the draw would change the target, so the algorithm instead records the failure. Raw conditional intervals remain in the analysis outputs. After inspecting support, we adopted a conservative presentation rule that suppresses intervals if any included item--relation cell has fewer than five resampling units. This rule prevents a degenerate empirical bootstrap from being mistaken for precision. Having more units does not establish nominal coverage.
+
+The expanded British EU comparison also has partially missing discussion-group identifiers. Its raw respondent bootstrap ignores dependence among the known groupmates. We therefore suppress its displayed interval while retaining its point estimate and the missing-group flag. We do not silently discard people without group identifiers or call that respondent interval cluster-adjusted. Denmark and AMR lack usable discussion-group identifiers for these cohorts; their displayed intervals assume independent respondents.
+
+\begin{table}[H]
+\centering\small
+\caption{Bootstrap support for the primary policy comparison.}
+\label{tab:comparative-support}
+\input{../tabs/comparative_support.tex}
+\tabnote{Units are distinct discussion groups or respondents retained in estimation. All \comparativeDraws{} attempted draws retain the fixed item set; an invalid draw lacks a required item--relation cell. Sparse means fewer than five resampling units in at least one included cell. These diagnostics concern support, not substantive coding validity.}
+\end{table}
+
+The sensitivities in Table~\ref{tab:comparative-sensitivity} change either the substantive mapping or the response rule. Expanded estimates include all adjudicated items, including interpretation-dependent additions and explicitly flagged source-problem cases. Canonical scoring follows the archive's treatment of blanks on observed questionnaires; substantive-only scoring excludes don't-knows. Each specification rebuilds its eligible item set and paired sample. These are different descriptive targets, not merely different standard errors for one estimate.
+
+\begin{table}[H]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Differences in gains under alternative item and response rules.}
+\label{tab:comparative-sensitivity}
+\input{../tabs/comparative_sensitivity.tex}
+\tabnote{Uncongenial minus congenial gain in percentage points, followed by conditional 95\% intervals where support permits. Expanded items use the primary response rule; other columns use the primary mapping. A dash denotes no primary mapping or a suppressed interval. Vermont is retained only as a source-flawed archival sensitivity; the British EU item is interpretation-dependent. Intervals are suppressed for sparse relation cells and partial discussion-group coverage.}
+\end{table}
+
+\section{Denmark and the Earlier Selective-Learning Analysis}
+
+The Danish complete-battery analysis preserves a different estimand from the comparative analysis. Every retained respondent contributes to both congenial and uncongenial categories. We average people within initial position and give supporters and opponents equal weight. The comparative analysis instead pairs each item separately, permitting different response availability across items. Its small numerical difference from the earlier result reflects that change in the sample and denominator.
+
+The common core contains interest-rate autonomy and tax-rate autonomy, the overlapping directions in Hansen's interpretation and both original coding passes. It includes \nPaired{} complete respondents: \nSupport{} initial supporters and \nOppose{} opponents. Congenial accuracy rises from \corePreC\% to \corePostC\%; uncongenial accuracy from \corePreU\% to \corePostU\%. The difference in gains is \coreDiff{} points, with an interval from \coreLow{} to \coreHigh{}. These are conditional descriptive estimates, not an exact replication of Hansen's complete historical table.
+
+\begin{table}[H]
+\centering\small
+\caption{Danish complete-battery sensitivity to item interpretation.}
+\input{../tabs/coding.tex}
+\tabnote{Recruitment-to-exit paired changes, equally weighting initial supporters and opponents. The Hansen subset adds circulation date and central-bank status; omitting the bank tests its interpretive uncertainty. The pilot-agreement mapping adds deficit fines and national coin symbols. The batteries overlap and are not independent replications.}
+\end{table}
+
+Hansen treated the circulation date as supportive and the national bank's incorporation into the European Central Bank as challenging. The model-assisted pilot treated the date as neutral and the bank as ambiguous. Conversely, the pilot assigns directions to deficit fines and national coin symbols that Hansen treated as nondirectional. Neither empirical agreement among the resulting contrasts nor model agreement resolves these substantive judgments. Hansen's historical table also includes a monetary-cooperation item absent from the retained canonical selection.
+
+The transition diagnostic applies common acquisition and loss probabilities to the observed category starting levels. It shows how substantial catch-up can arise without different transition rates for congenial and uncongenial facts. The diagnostic is not a causal decomposition and cannot establish which respondents truly learned, guessed, or changed their reporting behavior.
+
+\begin{table}[H]
+\centering\small
+\caption{Danish catch-up under a common-transition diagnostic.}
+\input{../tabs/headroom.tex}
+\tabnote{Percentage points. The benchmark holds acquisition and loss probabilities common across relation categories within initial position and combines them with the observed starting accuracy. It illustrates the role of unequal room to improve; it does not identify a psychological mechanism.}
+\end{table}
+
+\section{Reproduction}
+
+The person key combines study, source namespace, and respondent identifier; item and wave complete the answer key. We use one source namespace for each event, avoiding duplicate representations of the same attendees. The comparative baseline build checks both original source rows and respondent identifiers. It retains literal baseline values, source columns, unclassified relations, and reasons. Unmapped items remain in the respondent-item table for the selected study cohorts. The full inventory registry also retains studies outside those cohorts.
+
+Shared source harmonization remains in \texttt{dp\_data}. This repository contains the substantive coding, paired estimators, generated results, and manuscript. Input manifests verify source and dictionary content hashes. Statistical tests cover fixed item weights, same-person time pairing, missingness, duplicate keys, cluster resampling, unsupported cells, and independently hand-computed contrasts. Independent review reproduced the comparative point estimates directly from the paired data.
+
+Running \texttt{make check} executes local tests and linting, rebuilds the data and analyses, generates numerical macros and exhibits, and compiles this PDF. \texttt{make paper} runs the build without the separate lint and test targets. The saved outputs preserve raw intervals and support diagnostics even when the manuscript suppresses an interval. References are stored in \path{ms/references.bib}; publisher, institutional, author, and original-platform checks are recorded in \path{metadata/reference_validation.json}.

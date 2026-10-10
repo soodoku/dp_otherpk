@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\setstretch{1.15}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\input{../tabs/macros.tex}
+\input{../tabs/comparative_macros.tex}
+\newcommand{\tabnote}[1]{\par\smallskip\begin{minipage}{\linewidth}\footnotesize #1\end{minipage}}
+\title{The Awful Truth:\\Learning Facts That Favor the Other Side}
+\author{}
+\date{Working draft, October 2026}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+\noindent Equally knowledgeable people on opposite sides of a dispute may know different things. Does deliberation help them learn facts that favor the other side? We classify factual questions by their implications for respondents' pre-event positions and compare paired changes in accuracy on the same questions. A systematic screen of \inventoryItems{} items across \inventoryStudies{} studies yields a primary comparison covering \primaryItems{} items in \primaryStudies{} Deliberative Polls. Uncongenial accuracy increases in \positiveGainStudies{} studies, but greater uncongenial than congenial gains are not uniform: the estimated difference is positive in \positiveDifferenceStudies{} studies, and only \positiveIntervalStudies{} conditional intervals exclude zero on the positive side. Northern Ireland shows substantial gains in both categories; a separate US party-alignment comparison is close to zero. The contribution extends Hansen's Danish selective-learning analysis into a comparative respondent-by-item design. The evidence supports learning across initial positions, with uneven relative catch-up. It does not identify a causal effect of deliberation or distinguish motivated learning from differences in initial knowledge, response behavior, and room to improve.
+\end{abstract}
+
+\section{Introduction}
+
+Equally knowledgeable people on opposite sides of a policy dispute may know and not know different things. One may know a policy's costs, another its benefits. Their total knowledge scores can be identical while the considerations available to them differ. Deliberation asks people to confront facts and arguments they might otherwise overlook. Whether they learn facts that favor the other side is therefore a different question from whether their overall knowledge increases.
+
+Across the studies examined here, people generally become more accurate on facts that challenge their initial positions. But those gains do not consistently exceed gains on congenial facts. The primary comparison covers \primaryStudies{} studies, including disputes about constitutional change, criminal justice, schools, foreign policy, housing, health care, and voting rules. Uncongenial gains are positive in \positiveGainStudies{} studies. Relative catch-up is less uniform, and most study-specific contrasts remain imprecise. The Danish euro poll supplies a clear example of catch-up; it does not describe every setting.
+
+Selective learning in Denmark is already the subject of \citet[sec.~6.5, Table~6.8]{hansen2004}. Hansen divided respondents by recruitment voting intentions, interpreted particular euro facts, and showed that several initial knowledge gaps narrowed. The broader analysis of that event also examined knowledge and opinion change \citep{andersen2007}. Neither the question nor the Danish pattern is a new discovery. Our contribution is the comparative construction: an explicit respondent-by-item relation, a systematic screen of the retained questions, matched pre-event positions, and a common comparison that can accommodate studies whose factual batteries favor only one side of an issue.
+
+The relation between a person and a fact must be established independently of the person's answer. Political knowledge gaps vary across subjects, and apparent differences can depend on wording and response behavior \citep{jerit2012,roush2023}. A question that one side answers less accurately is not thereby uncongenial to that side. Defining uncongeniality by an initial knowledge deficit would also build room for catch-up into the outcome. We instead combine the substantive implication of the correct proposition with a position or group affiliation measured before the event.
+
+\section{Facts, Groups, and Positions}
+
+A fact is congenial here when its policy implication supports a respondent's baseline position, and uncongenial when it challenges that position. Congeniality is a relation, not an intrinsic property of a question. The same proposition can support one person's position and challenge another's. The classification does not assert that either person likes the fact, regards it as decisive, or consciously processes its political implications. Those are additional psychological claims.
+
+Facts can bear on a policy without proving which policy is best. An uninsured population's low income is relevant to an argument for financial assistance; it does not settle how assistance should be financed. A requirement to offer a broad school curriculum can support sharing courses across schools; it does not prove that sharing outweighs every objection. Requiring a fact to logically determine the whole policy choice would eliminate much of the information that citizens actually use in political argument.
+
+Group membership supplies a different reference point. A fact can challenge a party's stated position even when an individual party member disagrees with that position. We therefore distinguish personal policy congeniality from documented party alignment. A further distinction concerns knowledge \emph{about} another group. Knowing a minority's population share or living conditions is outgroup knowledge for some respondents, but its substantive implication need not favor that group. Research on deliberative contact includes such factual knowledge \citep{kim2018}; it cannot be merged automatically with position-relative congeniality.
+
+Learning also need not produce agreement. People may accept a fact yet disagree about its importance or consequences \citep{gaines2007}. Changes in correct-answer scores can reflect recall, guessing, or willingness to report an answer already known. Accuracy incentives in factual-learning studies show why motivated responding and motivated learning should remain distinct \citep{khanna2018}. We use learning as shorthand for increased reported factual accuracy, without treating a score change as a uniquely identified psychological process.
+
+The comparative design separates two descriptive propositions. Broadening requires positive gains on uncongenial facts. Relative catch-up requires those gains to exceed congenial gains. The latter is a stronger statement about scores, but not necessarily stronger evidence of a change in motivation. When congenial accuracy starts higher, an identical acquisition process can produce a larger uncongenial increase simply because more errors remain to be corrected.
+
+\input{design.tex}
+
+\section{Results}
+
+\subsection{Learning across initial positions}
+
+Uncongenial accuracy increases in \positiveGainStudies{} of the \primaryStudies{} primary studies (Table~\ref{tab:comparative}). The studies differ greatly in the size of those gains. The pattern establishes that respondents often become more accurate on information supporting a position they initially opposed. It does not require an initial knowledge disadvantage, nor does it imply that the information changes their policy preferences.
+
+\begin{table}[!htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\caption{Paired changes on the same facts across baseline policy positions.}
+\label{tab:comparative}
+\input{../tabs/comparative_gains.tex}
+\tabnote{C denotes congenial and U uncongenial. Gains and U--C differences are percentage points, averaged equally over the same items within each study. People counts are distinct respondents contributing at least one classifiable item pair; they need not contribute to both categories. The primary rule includes explicit don't-knows as incorrect and excludes undocumented source blanks. Intervals are conditional 95\% percentile bootstrap intervals, resampling discussion groups when complete identifiers are available and respondents otherwise. Intervals are omitted when any item--relation cell has fewer than five resampling units. The appendix reports baseline levels, cell support, and sensitivities.}
+\end{table}
+
+Northern Ireland makes the distinction between broadening and relative catch-up especially clear. The Omagh event brought Catholics and Protestants together to discuss the future of local schools \citep{luskin2014}. On the primary school-collaboration items, congenial accuracy rises by \niGainC{} points and uncongenial accuracy by \niGainU{} points. Both sides learn substantially. The difference is \niDifference{} points, with an interval from \niLow{} to \niHigh{}. The result offers no clear evidence of faster uncongenial learning, despite the large uncongenial gain. These relations use baseline preferences about shared campuses and shared courses, not an assumption that Catholics and Protestants favor opposing schooling policies.
+
+The US America in One Room comparison similarly shows gains in both categories. Across the health-care and capital-gains items, congenial accuracy increases by \usGainC{} points and uncongenial accuracy by \usGainU{} points. Respondents are classified separately on each relevant policy question. Someone can therefore contribute a congenial health-care response and an uncongenial tax response, while another person contributes only one eligible pair. The item-balanced comparison accommodates those patterns without substituting party identity for the measured issue position.
+
+\subsection{Relative catch-up is uneven}
+
+The uncongenial-minus-congenial difference is positive in \positiveDifferenceStudies{} studies, but its magnitude ranges from \comparativeMin{} to \comparativeMax{} points (Figure~\ref{fig:comparative}). Only \positiveIntervalStudies{} of the conditional intervals exclude zero on the positive side. This count describes the displayed estimates; it is not a multiple-testing-adjusted conclusion or an estimate of how frequently deliberation produces catch-up in a population of events.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{../figs/comparative_gains.pdf}
+\caption{Relative catch-up varies across studies. Points show equal-item differences in paired accuracy gains, uncongenial minus congenial, for the primary policy-position comparison. Lines are conditional 95\% bootstrap intervals; resampling units and exclusions match Table~\ref{tab:comparative}. A positive value means larger uncongenial gains. Britain health has too few uncongenial resampling units for a displayed interval.}
+\label{fig:comparative}
+\end{figure}
+
+The initial knowledge advantage is also uneven (Appendix Table~\ref{tab:comparative-levels}). Congenial accuracy often starts higher, but that ordering is weak or reversed in some studies. Denmark has a substantial initial asymmetry; Northern Ireland begins with nearly equal category accuracy. A universal account in which deliberation preferentially corrects uncomfortable errors would have to explain both the positive and negative differences. These data support a more limited conclusion: learning extends across initial positions, while its relative distribution depends on the topic, battery, and respondents.
+
+Some apparently precise point estimates rest on very little opposing-position support. Britain health contains only a few uncongenial respondents under the selected baseline question. Its observed zero uncongenial gain is a finite-sample description, not evidence that opponents cannot learn. We retain the point estimate to show the coverage problem and omit its inferential interval. Item-by-relation counts remain available in the generated data.
+
+\subsection{Party alignment and specification choices}
+
+Neither version of the US health-care comparison shows clear relative catch-up. Democrats gain \partyGainC{} points on the ACA-protection item, while Republicans gain \partyGainU{} points. Under the documented platform mapping, the uncongenial-minus-congenial difference is \partyDifference{} points, with an interval from \partyLow{} to \partyHigh{}. On the same ACA item, classification by personal repeal preference yields a difference of \acaPolicyDiff{} points (\acaPolicyLow{} to \acaPolicyHigh{}). Both contrasts are imprecise and compatible with zero. They use different eligible groups, so their numerical difference does not identify an effect of party identification. The comparison keeps group alignment distinct from personal policy preference.
+
+The broader item mapping does not restore a uniform catch-up pattern (Appendix Table~\ref{tab:comparative-sensitivity}). Adding interpretation-dependent facts changes some signs, including Northern Ireland and Australia. Different response rules also matter: excluding don't-knows selects a different set of answers, and treating source blanks as incorrect can change the observed sample as well as its scores. Those differences are part of the measurement result. A conclusion that depends on one plausible item mapping or missingness convention should remain conditional on it.
+
+Denmark remains informative as a case with reciprocal item coverage and prior published analysis. The earlier complete-battery comparison gives an uncongenial-minus-congenial difference of \coreDiff{} points, with a conditional interval from \coreLow{} to \coreHigh{}. Broader Danish mappings preserve positive recruitment-to-exit contrasts. That result reproduces the substantive direction of Hansen's analysis while making the weighting and paired sample explicit. The cross-study variation limits how far the Danish pattern can be generalized.
+
+\section{Discussion}
+
+Deliberative participants often learn facts that favor positions they did not initially hold. That finding is broader than the Danish euro case. Faster learning of those facts is less general: both the estimated differences and their uncertainty vary across studies, and the separate party-defined comparison provides no clear evidence of relative catch-up. Aggregate knowledge gains alone would conceal these distinctions.
+
+The main contribution is an explicit comparative measurement design. It connects an item's substantive implication to a pre-event respondent measure, retains uncertain relations, and compares changes on the same facts. It also permits useful evidence from one-direction batteries. Requiring each person to face both kinds of fact would discard much of the archive; retaining those studies requires acknowledging that the comparison is then between baseline groups.
+
+The design leaves several questions open. Paired accuracy changes cannot isolate discussion from briefing, testing, or selection into attendance. Differences in gains cannot isolate congeniality from prior familiarity, education, political engagement, or group composition. Binary scores also impose unequal room to improve. Human adjudication of the model-assisted coding and new studies with balanced factual batteries would strengthen the measurement claim. A design that randomized exposure to equally difficult, independently coded congenial and uncongenial information would address a different and more causal question.
+
+The original comparative ambition also includes learning about social outgroups. The present archive supports a distinction between policy and party alignment, but not a completed Roma versus non-Roma analysis of the Bulgarian Roma-policy event. The retained Bulgarian crime study cannot substitute for that event, and Northern Ireland's religious identities cannot substitute for measured schooling positions. Extending those comparisons requires linked group membership and clearly identified group-referent facts. The coding preserves those unresolved cases rather than converting them into null findings.
+
+\clearpage
+\bibliographystyle{apalike}
+\bibliography{references}
+\clearpage
+\appendix
+\input{appendix.tex}
+\end{document}

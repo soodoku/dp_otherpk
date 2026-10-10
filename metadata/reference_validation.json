@@ -1,0 +1,455 @@
+[
+  {
+    "DOI": "10.1111/j.1475-6765.2007.00699.x",
+    "title": [
+      "How deliberation makes better citizens: The Danish Deliberative Poll on the euro"
+    ],
+    "author": [
+      {
+        "given": "Vibeke Normann",
+        "family": "Andersen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kasper M.",
+        "family": "Hansen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "European Journal of Political Research"
+    ],
+    "volume": "46",
+    "issue": "4",
+    "page": "531-556",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          6
+        ]
+      ]
+    },
+    "checked": "2026-10-10",
+    "metadata_source": "https://api.crossref.org/works/10.1111/j.1475-6765.2007.00699.x",
+    "citation_key": "andersen2007",
+    "content_source": "https://www.kaspermhansen.eu/Work/andersen_hansen_2007.pdf",
+    "validation": "First page and event-design description; title, author order, journal, year, pages and DOI verified."
+  },
+  {
+    "DOI": "10.1007/s11109-017-9395-7",
+    "title": [
+      "Motivated Responding in Studies of Factual Learning"
+    ],
+    "author": [
+      {
+        "given": "Kabir",
+        "family": "Khanna",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gaurav",
+        "family": "Sood",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Political Behavior"
+    ],
+    "volume": "40",
+    "issue": "1",
+    "page": "79-101",
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          28
+        ]
+      ]
+    },
+    "checked": "2026-10-10",
+    "metadata_source": "https://api.crossref.org/works/10.1007/s11109-017-9395-7",
+    "citation_key": "khanna2018",
+    "content_source": "https://link.springer.com/article/10.1007/s11109-017-9395-7",
+    "validation": "Publisher citation and issue date verify 2018, distinct from online publication in 2017. Author-hosted manuscript abstract and methods substantiate distinction between responding and learning.",
+    "issue_year": 2018
+  },
+  {
+    "DOI": "10.1561/100.00020178",
+    "title": [
+      "A Gap in Our Understanding? Reconsidering the Evidence for Partisan Knowledge Gaps"
+    ],
+    "author": [
+      {
+        "given": "Carolyn E.",
+        "family": "Roush",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Florida State University ,",
+            "place": [
+              "USA"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Gaurav",
+        "family": "Sood",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Independent Researcher ,",
+            "place": [
+              "USA"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Quarterly Journal of Political Science"
+    ],
+    "volume": "18",
+    "issue": "1",
+    "page": "131-151",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          2,
+          1
+        ]
+      ]
+    },
+    "checked": "2026-10-10",
+    "metadata_source": "https://api.crossref.org/works/10.1561/100.00020178",
+    "citation_key": "roush2023",
+    "content_source": "https://gsood.com/research/papers/partisan_gap.pdf",
+    "validation": "Author manuscript abstract and coding discussion substantiate content claim; Crossref and publisher volume 18 issue 1 verify publication metadata."
+  },
+  {
+    "DOI": "10.1093/joc/jqy056",
+    "title": [
+      "Intergroup Contact in Deliberative Contexts: Evidence From Deliberative Polls"
+    ],
+    "author": [
+      {
+        "given": "Nuri",
+        "family": "Kim",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Wee Kim Wee School of Communication and Information, Nanyang Technological University, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "James S",
+        "family": "Fishkin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Communication, Stanford University, Stanford, CA, USA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Robert C",
+        "family": "Luskin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Government, University of Texas at Austin, Austin, TX, USA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of Communication"
+    ],
+    "volume": "68",
+    "issue": "6",
+    "page": "1029-1051",
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          29
+        ]
+      ]
+    },
+    "checked": "2026-10-10",
+    "metadata_source": "https://api.crossref.org/works/10.1093/joc/jqy056",
+    "citation_key": "kim2018",
+    "content_source": "https://doi.org/10.1093/joc/jqy056",
+    "validation": "Local publisher PDF in dp_data/data/bulgaria-2007/papers/intergroup-contact-deliberative-contexts-2018.pdf: title page and outgroup-knowledge methods checked."
+  },
+  {
+    "DOI": "10.1111/j.1468-2508.2007.00601.x",
+    "title": [
+      "Same Facts, Different Interpretations: Partisan Motivation and Opinion on Iraq"
+    ],
+    "author": [
+      {
+        "given": "Brian J.",
+        "family": "Gaines",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James H.",
+        "family": "Kuklinski",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paul J.",
+        "family": "Quirk",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Buddy",
+        "family": "Peyton",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jay",
+        "family": "Verkuilen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "The Journal of Politics"
+    ],
+    "volume": "69",
+    "issue": "4",
+    "page": "957-974",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          11
+        ]
+      ]
+    },
+    "checked": "2026-10-10",
+    "metadata_source": "https://api.crossref.org/works/10.1111/j.1468-2508.2007.00601.x",
+    "citation_key": "gaines2007",
+    "content_source": "https://fbaum.unc.edu/teaching/articles/JoP-2007-Gaines.pdf",
+    "validation": "Published article first page, abstract and introduction: factual beliefs versus interpretations."
+  },
+  {
+    "DOI": "10.1017/s0022381612000187",
+    "title": [
+      "Partisan Perceptual Bias and the Information Environment"
+    ],
+    "author": [
+      {
+        "given": "Jennifer",
+        "family": "Jerit",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jason",
+        "family": "Barabas",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "The Journal of Politics"
+    ],
+    "volume": "74",
+    "issue": "3",
+    "page": "672-684",
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          7
+        ]
+      ]
+    },
+    "checked": "2026-10-10",
+    "metadata_source": "https://api.crossref.org/works/10.1017/S0022381612000187",
+    "citation_key": "jerit2012",
+    "content_source": "https://bpb-us-e1.wpmucdn.com/sites.dartmouth.edu/dist/d/2388/files/2022/04/JOP_2012.pdf",
+    "validation": "Author-hosted published article: title page and abstract; topic variation in partisan perceptual bias."
+  },
+  {
+    "citation_key": "hansen2004",
+    "title": "Deliberative Democracy and Opinion Formation",
+    "author": "Kasper M\u00f8ller Hansen",
+    "year": 2004,
+    "publisher": "Syddansk Universitetsforlag (University Press of Southern Denmark)",
+    "metadata_source": "https://researchprofiles.ku.dk/en/publications/deliberative-democracy-and-opinion-formation/",
+    "content_source": "https://www.kaspermhansen.eu/Work/Hansen2004.pdf",
+    "checked": "2026-10-10",
+    "validation": "Institutional bibliographic record and author-hosted book checked; section 6.5, Table 6.8 and its interpretation inspected, with local 2003 draft as cross-check. Existing entries in dp_learning and dp_nireland consulted."
+  },
+  {
+    "citation_key": "democrats2016",
+    "title": "2016 Democratic Party Platform",
+    "author": "Democratic Party",
+    "year": 2016,
+    "publication_date": "2016-07-21",
+    "url": "https://www.presidency.ucsb.edu/documents/2016-democratic-party-platform",
+    "verified_on": "2026-10-10",
+    "verification": "Opened archived full original platform at American Presidency Project; checked title, party, date and ACA policy language",
+    "claim": "Supports retaining and expanding ACA"
+  },
+  {
+    "citation_key": "republicans2016",
+    "title": "2016 Republican Party Platform",
+    "author": "Republican Party",
+    "year": 2016,
+    "publication_date": "2016-07-18",
+    "url": "https://www.presidency.ucsb.edu/documents/2016-republican-party-platform",
+    "verified_on": "2026-10-10",
+    "verification": "Opened archived full original platform at American Presidency Project; checked title, party, date and ACA policy language",
+    "claim": "Calls explicitly for ACA repeal"
+  },
+  {
+    "citation_key": "fishkin2005",
+    "title": "Experimenting with a Democratic Ideal: Deliberative Polling and Public Opinion",
+    "author": [
+      "James S. Fishkin",
+      "Robert C. Luskin"
+    ],
+    "year": 2005,
+    "journal": "Acta Politica",
+    "volume": 40,
+    "issue": 3,
+    "pages": "284-298",
+    "doi": "10.1057/palgrave.ap.5500121",
+    "url": "https://link.springer.com/article/10.1057/palgrave.ap.5500121",
+    "verified_on": "2026-10-10",
+    "verification": "Springer original article page: title, authors, volume, pages, publication year, DOI and abstract; issue corroborated by original Political Studies reference list."
+  },
+  {
+    "citation_key": "luskin2014",
+    "title": "Deliberating across Deep Divides",
+    "author": [
+      "Robert C. Luskin",
+      "Ian O'Flynn",
+      "James S. Fishkin",
+      "David Russell"
+    ],
+    "year": 2014,
+    "journal": "Political Studies",
+    "volume": 62,
+    "issue": 1,
+    "pages": "116-135",
+    "doi": "10.1111/j.1467-9248.2012.01005.x",
+    "url": "https://journals.sagepub.com/doi/10.1111/j.1467-9248.2012.01005.x",
+    "verified_on": "2026-10-10",
+    "verification": "Sage original article page: all authors, title, volume/issue, pages and issue date March2014 (online December2012), abstract identifies Omagh school debate."
+  }
+]

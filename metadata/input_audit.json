@@ -1,0 +1,478 @@
+{
+  "source_head": "f88da7fa904cde55044dd3dda9fd337ca26cb8bd",
+  "source_worktree_status": "M README.md\n M docs/architecture.md\n M docs/historical-lineage.md\n M docs/poll-evidence.md\n M docs/poll-issues.md\n M scripts/audit_downstream_sources.R\n M scripts/review_nic_age_downstream.R\n M scripts/review_uk_crime_downstream.R\n M scripts/review_uk_ge_downstream.R\n?? data/bulgaria-2007/Bulgaria-20260930T054837Z-1-001.zip",
+  "manifest_sha256": "4a4ab31442c7d5169de6863095eb3369169cc7c9370d1de1a39aab731aa2ae44",
+  "pyarrow_version": "23.0.1",
+  "knowledge_answers_read": false,
+  "inputs": {
+    "analysis_items": {
+      "path": "output/analysis/analysis_items.parquet",
+      "sha256": "7d1b539c380fe43dd13845164017414fd48c1e574211be8baa6dfa279c0b28e1",
+      "rows": 260,
+      "columns": [
+        "poll_id",
+        "item_id",
+        "source_column_t1",
+        "historical_item_id",
+        "cor_item_id",
+        "question",
+        "wording_source",
+        "response_type",
+        "answer_choices",
+        "correct_codes",
+        "correct_answer",
+        "source_reference",
+        "coding_note",
+        "historical_item_id_t2",
+        "question_display",
+        "answer_choices_display",
+        "correct_answer_display"
+      ]
+    },
+    "analysis_participants": {
+      "path": "output/analysis/analysis_participants.parquet",
+      "sha256": "ea9c732bfeb76801461399d1041cc632dd53e72526fe306e8623a6615d036a71",
+      "rows": 51924,
+      "columns": [
+        "poll_id",
+        "source_dataset",
+        "respondent_id",
+        "historical_respondent_id",
+        "source_row",
+        "identity_basis",
+        "arm",
+        "assignment",
+        "attended",
+        "panel",
+        "small_group_id",
+        "cluster_id",
+        "country",
+        "weight",
+        "ba",
+        "female",
+        "age",
+        "education",
+        "minority",
+        "extremity",
+        "read_briefing",
+        "education_above_median",
+        "income_above_median",
+        "attendance_basis",
+        "attendance_before_post_rule",
+        "attendance_basis_before_post_rule",
+        "attendance_evidence_before_post_rule",
+        "participant",
+        "exclusion_reason"
+      ]
+    },
+    "analysis_phase_participants": {
+      "path": "output/analysis/analysis_phase_participants.parquet",
+      "sha256": "a05f552bd18c80a362cb58e8dd3a8289b39c19089552d3843960398954737e9e",
+      "rows": 53053,
+      "columns": [
+        "poll_id",
+        "source_dataset",
+        "respondent_id",
+        "historical_respondent_id",
+        "source_row",
+        "identity_basis",
+        "arm",
+        "assignment",
+        "attended",
+        "panel",
+        "small_group_id",
+        "cluster_id",
+        "country",
+        "weight",
+        "ba",
+        "female",
+        "age",
+        "education",
+        "minority",
+        "extremity",
+        "read_briefing",
+        "study_id",
+        "attendance_status",
+        "attendance_evidence",
+        "sessions_attended",
+        "education_above_median",
+        "income_above_median",
+        "attendance_basis",
+        "attendance_before_post_rule",
+        "attendance_basis_before_post_rule",
+        "attendance_evidence_before_post_rule",
+        "participant",
+        "exclusion_reason"
+      ]
+    }
+  },
+  "coverage": [
+    {
+      "poll_id": "a1r-climate-2021",
+      "catalog_items": 8,
+      "analysis_participants": {
+        "control": 8814
+      },
+      "analysis_phase_participants": {
+        "control": 8814
+      }
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "catalog_items": 7,
+      "analysis_participants": {
+        "control": 3842
+      },
+      "analysis_phase_participants": {
+        "control": 3842
+      }
+    },
+    {
+      "poll_id": "amr-2024",
+      "catalog_items": 6,
+      "analysis_participants": {
+        "control": 2419
+      },
+      "analysis_phase_participants": {
+        "control": 2419
+      }
+    },
+    {
+      "poll_id": "australia-republic-1999",
+      "catalog_items": 12,
+      "analysis_participants": {
+        "cor_sood": 347,
+        "historical": 4659
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 347,
+        "historical": 4659
+      }
+    },
+    {
+      "poll_id": "btp-2007",
+      "catalog_items": 8,
+      "analysis_participants": {
+        "cor_sood": 301
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 301
+      }
+    },
+    {
+      "poll_id": "btp-general-election-2004",
+      "catalog_items": 9,
+      "analysis_participants": {
+        "cor_sood": 250,
+        "historical": 299
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 250,
+        "historical": 299
+      }
+    },
+    {
+      "poll_id": "btp-health-education-2005",
+      "catalog_items": 6,
+      "analysis_participants": {
+        "cor_sood": 454,
+        "historical": 454
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 454,
+        "historical": 454
+      }
+    },
+    {
+      "poll_id": "btp-national-2003",
+      "catalog_items": 11,
+      "analysis_participants": {
+        "historical": 245
+      },
+      "analysis_phase_participants": {
+        "historical": 245
+      }
+    },
+    {
+      "poll_id": "btp-online-primaries-2004",
+      "catalog_items": 7,
+      "analysis_participants": {
+        "cor_sood": 328
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 328
+      }
+    },
+    {
+      "poll_id": "btp-presidential-primaries-2004",
+      "catalog_items": 7,
+      "analysis_participants": {
+        "historical": 1289
+      },
+      "analysis_phase_participants": {
+        "historical": 1289
+      }
+    },
+    {
+      "poll_id": "bulgaria-crime-2002",
+      "catalog_items": 7,
+      "analysis_participants": {
+        "cor_sood": 278,
+        "historical": 278
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 278,
+        "historical": 278
+      }
+    },
+    {
+      "poll_id": "california-whats-next-2011",
+      "catalog_items": 8,
+      "analysis_participants": {
+        "cor_sood": 396
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 396
+      }
+    },
+    {
+      "poll_id": "cpl-1996",
+      "catalog_items": 7,
+      "analysis_participants": {
+        "cor_sood": 216,
+        "historical": 1246
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 216,
+        "historical": 1246
+      }
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "catalog_items": 9,
+      "analysis_participants": {
+        "cor_sood": 359
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 359
+      }
+    },
+    {
+      "poll_id": "europolis-2009",
+      "catalog_items": 9,
+      "analysis_participants": {
+        "cor_sood": 348,
+        "historical": 4384
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 348,
+        "historical": 4384
+      }
+    },
+    {
+      "poll_id": "marousi-2006",
+      "catalog_items": 7,
+      "analysis_participants": {
+        "score_only": 146
+      },
+      "analysis_phase_participants": {
+        "score_only": 1275
+      }
+    },
+    {
+      "poll_id": "michigan-2009",
+      "catalog_items": 11,
+      "analysis_participants": {
+        "cor_sood": 310
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 310
+      }
+    },
+    {
+      "poll_id": "new-haven-2004",
+      "catalog_items": 8,
+      "analysis_participants": {
+        "historical": 132
+      },
+      "analysis_phase_participants": {
+        "historical": 132
+      }
+    },
+    {
+      "poll_id": "nic-1996",
+      "catalog_items": 11,
+      "analysis_participants": {
+        "cor_sood": 466,
+        "historical": 911
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 466,
+        "historical": 911
+      }
+    },
+    {
+      "poll_id": "nic2-2003",
+      "catalog_items": 11,
+      "analysis_participants": {
+        "historical": 1493
+      },
+      "analysis_phase_participants": {
+        "historical": 1493
+      }
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "catalog_items": 7,
+      "analysis_participants": {
+        "control": 243,
+        "cor_sood": 124
+      },
+      "analysis_phase_participants": {
+        "control": 243,
+        "cor_sood": 124
+      }
+    },
+    {
+      "poll_id": "san-mateo-2008",
+      "catalog_items": 8,
+      "analysis_participants": {
+        "cor_sood": 239,
+        "historical": 1806
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 239,
+        "historical": 1806
+      }
+    },
+    {
+      "poll_id": "swepco-1996",
+      "catalog_items": 5,
+      "analysis_participants": {
+        "cor_sood": 232,
+        "historical": 1478
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 232,
+        "historical": 1478
+      }
+    },
+    {
+      "poll_id": "tanzania-2015",
+      "catalog_items": 0,
+      "analysis_participants": {
+        "control": 2002
+      },
+      "analysis_phase_participants": {
+        "control": 2002
+      }
+    },
+    {
+      "poll_id": "tomorrows-europe-2007",
+      "catalog_items": 11,
+      "analysis_participants": {
+        "cor_sood": 359,
+        "historical": 3550
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 359,
+        "historical": 3550
+      }
+    },
+    {
+      "poll_id": "uk-crime-1994",
+      "catalog_items": 7,
+      "analysis_participants": {
+        "cor_sood": 299,
+        "historical": 869
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 299,
+        "historical": 869
+      }
+    },
+    {
+      "poll_id": "uk-eu-1995",
+      "catalog_items": 5,
+      "analysis_participants": {
+        "cor_sood": 224,
+        "historical": 900
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 224,
+        "historical": 900
+      }
+    },
+    {
+      "poll_id": "uk-general-election-1997",
+      "catalog_items": 15,
+      "analysis_participants": {
+        "cor_sood": 275,
+        "historical": 1210
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 275,
+        "historical": 1210
+      }
+    },
+    {
+      "poll_id": "uk-health-1998",
+      "catalog_items": 6,
+      "analysis_participants": {
+        "cor_sood": 230,
+        "historical": 230
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 230,
+        "historical": 230
+      }
+    },
+    {
+      "poll_id": "uk-monarchy-1996",
+      "catalog_items": 9,
+      "analysis_participants": {
+        "cor_sood": 258,
+        "historical": 857
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 258,
+        "historical": 857
+      }
+    },
+    {
+      "poll_id": "vermont-energy-2007",
+      "catalog_items": 9,
+      "analysis_participants": {
+        "cor_sood": 146
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 146
+      }
+    },
+    {
+      "poll_id": "wtu-1996",
+      "catalog_items": 5,
+      "analysis_participants": {
+        "cor_sood": 230,
+        "historical": 1230
+      },
+      "analysis_phase_participants": {
+        "cor_sood": 230,
+        "historical": 1230
+      }
+    },
+    {
+      "poll_id": "zeguo-2005",
+      "catalog_items": 4,
+      "analysis_participants": {
+        "historical": 269
+      },
+      "analysis_phase_participants": {
+        "historical": 269
+      }
+    }
+  ],
+  "candidate_cases_without_catalog_items": [
+    "bulgaria-2007"
+  ]
+}

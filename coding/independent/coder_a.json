@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "coder_id": "coder_a",
+    "coding_round": 1,
+    "status": "provisional_model_assisted_pilot",
+    "human_validation": false,
+    "model_identity": "Exact model/version not independently available in this coding pass.",
+    "prior_exposure": "At task start, only delegated instructions were available; no deliberate prior reading of study results or response data in this pass. General model training exposure to these studies cannot be established or ruled out.",
+    "outcome_blinded": false,
+    "protocol_deviation": {
+      "source": "dp_data/data/northern-ireland-2007/reports/northern-ireland-final-report.pdf",
+      "pdf_pages_accessed": [
+        34,
+        35,
+        36
+      ],
+      "event": "Attempted to retrieve questionnaire appendix using packet p.34 locator; pages instead exposed aggregate T1/T2 item-knowledge results and community-relations summaries. Stopped all report access and notified coordinator.",
+      "timing": "Occurred after original-source review and after reasoning that all seven Northern Ireland primary implications were unknown, but before writing the final JSON records. No timestamped pre-exposure coding artifact exists.",
+      "use": "No outcome percentages used as evidence or rationale; no respondent records or item-by-community results accessed. This pass must not be called blinded."
+    },
+    "relation_rule": "Only supports/challenges codes can generate congenial/uncongenial when linked to a measured eligible baseline position. Other implications map to cannot_classify, retained with reason and excluded from primary directional comparisons. Alternative axes are suggestions, not substitutions for the primary axes.",
+    "source_scope": "Packet, coding protocol, outcome-free original questionnaires/codebook/briefings; accidental report exposure explicitly declared. No other coder output inspected.",
+    "translation": "Danish fielded questionnaire interpreted by this model-assisted coder; English draft used only as contextual aid, not a substitute for fielded item wording."
+  },
+  "records": [
+    {
+      "poll_id": "america-in-one-room-2019",
+      "item_id": "knowledge_001",
+      "axis_id": "party_alignment",
+      "fact_implication": "neutral",
+      "referent_groups": [
+        "Republican"
+      ],
+      "rationale": "The keyed proposition identifies Republican control of the Senate. It reports institutional composition without evaluating that party, its policies, or the desirability of its control; partisan reference alone supplies no supportive or adverse policy proposition.",
+      "evidence_locator": "dp_data/data/america-in-one-room-2019/codebooks/a1r_codebook.tab, PK1, lines 3883-3888; pilot.json key.",
+      "source_limit": "Control key inherited from packet; no independent historical control source reviewed. Neutral is a content judgment, not a claim that no respondent could react affectively."
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "item_id": "knowledge_002",
+      "axis_id": "party_alignment",
+      "fact_implication": "neutral",
+      "referent_groups": [
+        "Democratic"
+      ],
+      "rationale": "The keyed proposition identifies Democratic control of the House. It reports institutional composition without evaluating that party, its policies, or the desirability of its control; partisan reference alone supplies no supportive or adverse policy proposition.",
+      "evidence_locator": "dp_data/data/america-in-one-room-2019/codebooks/a1r_codebook.tab, PK2, lines 3889-3894; pilot.json key.",
+      "source_limit": "Control key inherited from packet; no independent historical control source reviewed. Neutral is a content judgment, not a claim that no respondent could react affectively."
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "item_id": "knowledge_003",
+      "axis_id": "party_alignment",
+      "fact_implication": "unknown",
+      "referent_groups": [
+        "undocumented immigrants"
+      ],
+      "rationale": "The approximately 10 million answer is smaller than all distractors, but that ordering does not establish a Democratic position or a congenial fact. The briefing frames approximately 11 million both as an enforcement challenge and as a population whose deportation would disrupt communities.",
+      "evidence_locator": "dp_data/data/america-in-one-room-2019/codebooks/a1r_codebook.tab, PK3, lines 3895-3901; dp_data/data/america-in-one-room-2019/briefing-materials/a1r-2019-briefing.pdf, PDF p.40 (printed p.38), undocumented population and competing values.",
+      "source_limit": "No historical party position establishes a directional mapping for the population magnitude. Approximate packet key 10 million differs from the briefing estimate 11 million.",
+      "alternative_axis": "immigration_enforcement: ambiguous; population size can motivate enforcement or objections to mass deportation"
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "item_id": "knowledge_004",
+      "axis_id": "party_alignment",
+      "fact_implication": "ambiguous",
+      "referent_groups": [
+        "Russia",
+        "Turkey",
+        "Iran"
+      ],
+      "rationale": "Nonparticipation by three states can support an objection about incomplete international cooperation or a case for US leadership. The briefing explicitly presents both global leadership and competitiveness/burden objections. Neither the item nor this context settles which implication dominates Democratic alignment.",
+      "evidence_locator": "dp_data/data/america-in-one-room-2019/codebooks/a1r_codebook.tab, PK4, lines 3902-3908; dp_data/data/america-in-one-room-2019/briefing-materials/a1r-2019-briefing.pdf, PDF p.32 (printed p.30), Paris Agreement discussion.",
+      "source_limit": "The briefing describes signing while the item says part of; historical treaty status and its date sensitivity were not independently verified. Party mapping is unvalidated.",
+      "alternative_axis": "us_paris_participation: ambiguous; incomplete coverage and leadership rationales point in different directions"
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "item_id": "knowledge_005",
+      "axis_id": "party_alignment",
+      "fact_implication": "unknown",
+      "referent_groups": [
+        "young adults",
+        "women",
+        "insured people"
+      ],
+      "rationale": "The correct bundle identifies coverage extensions and protections. Those are reasons to retain ACA protections, but the reviewed text does not establish a historical Democratic-versus-Republican mapping for this particular bundle, and the fact is not a complete comparison of ACA costs and benefits.",
+      "evidence_locator": "dp_data/data/america-in-one-room-2019/codebooks/a1r_codebook.tab, PK5, lines 3909-3915; dp_data/data/america-in-one-room-2019/briefing-materials/a1r-2019-briefing.pdf, PDF p.23 (printed p.21), ACA provisions and critics; p.30 (printed p.28), ACA glossary.",
+      "source_limit": "Policy-specific supportive content is identifiable; party alignment is not validated by the permitted sources.",
+      "alternative_axis": "retain_aca_protections: supports; confirms three protections whose loss is relevant to repeal"
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "item_id": "knowledge_006",
+      "axis_id": "party_alignment",
+      "fact_implication": "unknown",
+      "referent_groups": [
+        "capital-gains recipients",
+        "wage earners"
+      ],
+      "rationale": "The briefing contrasts lower capital-gains rates with wage rates in the argument for equal taxation, but also presents double-taxation and investment objections. Around 20 percent is a policy parameter, not a demonstrated Democratic-aligned implication without a party-position bridge.",
+      "evidence_locator": "dp_data/data/america-in-one-room-2019/codebooks/a1r_codebook.tab, PK6, lines 3916-3922; dp_data/data/america-in-one-room-2019/briefing-materials/a1r-2019-briefing.pdf, PDF p.12 (printed p.10), taxation discussion; p.17 (printed p.15), capital-gains proposal.",
+      "source_limit": "Briefing states 23.4 percent, packet key is around 20 percent; historical tax scope and rate have not been independently adjudicated. No validated party mapping.",
+      "alternative_axis": "tax_capital_gains_as_wages: supports the stated rate-disparity rationale, conditional on retaining the wage-rate comparison"
+    },
+    {
+      "poll_id": "america-in-one-room-2019",
+      "item_id": "knowledge_007",
+      "axis_id": "party_alignment",
+      "fact_implication": "neutral",
+      "referent_groups": [
+        "WTO members",
+        "NAFTA members",
+        "USMCA members",
+        "TPP members"
+      ],
+      "rationale": "The keyed proposition compares organizational membership breadth. Having more members neither establishes better trade policy nor supports one US party; the briefing distinguishes global WTO rules from regional agreements and separately discusses benefits and costs.",
+      "evidence_locator": "dp_data/data/america-in-one-room-2019/codebooks/a1r_codebook.tab, PK7, lines 3923-3929; dp_data/data/america-in-one-room-2019/briefing-materials/a1r-2019-briefing.pdf, PDF p.49 (printed p.47), trade institutions.",
+      "source_limit": "Neutral applies to the membership comparison. It does not assign all international-trade facts neutrality or establish party consensus."
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "item_id": "knowledge_001",
+      "axis_id": "join_euro",
+      "fact_implication": "challenges",
+      "referent_groups": [
+        "Denmark"
+      ],
+      "rationale": "The correct proposition makes fines for excessive deficits a possible consequence of joining. In the questionnaire context of lost independence and welfare concerns, exposure to a sanction is an adverse constraint on joining. This is a limited cost implication, not a claim that fiscal discipline cannot be valued.",
+      "evidence_locator": "dp_data/data/denmark-euro-2000/questionnaires/arrival-questionnaire-danish.pdf, PDF p.5, Q4; p.4, Q3c/Q3g; dp_data/data/denmark-euro-2000/questionnaires/departure-questionnaire-danish.pdf, PDF p.5, Q4.",
+      "source_limit": "Key inherited from packet; questionnaire verifies wording and context, not an independent legal answer key. Danish wording interpreted by this model-assisted coder; no human translation validation."
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "item_id": "knowledge_002",
+      "axis_id": "join_euro",
+      "fact_implication": "challenges",
+      "referent_groups": [
+        "Denmark"
+      ],
+      "rationale": "The correct negation says Denmark cannot itself determine the interest rate after joining. It directly supports the questionnaire concern that participation reduces Danish independence, an argument against joining on that dimension.",
+      "evidence_locator": "dp_data/data/denmark-euro-2000/questionnaires/arrival-questionnaire-danish.pdf, PDF p.5, Q5; p.4, Q3c; dp_data/data/denmark-euro-2000/questionnaires/departure-questionnaire-danish.pdf, PDF p.5, Q5.",
+      "source_limit": "Key inherited from packet; questionnaire verifies wording and context, not an independent legal answer key. Danish wording interpreted by this model-assisted coder; no human translation validation. No inference is made about the size of effective pre-entry monetary autonomy."
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "item_id": "knowledge_003",
+      "axis_id": "join_euro",
+      "fact_implication": "supports",
+      "referent_groups": [
+        "Denmark"
+      ],
+      "rationale": "Retained authority to set tax levels limits the claimed loss of Danish independence and the associated threat to the welfare model. Relative to those explicitly administered concerns, the correct proposition supplies a reason in favor of joining.",
+      "evidence_locator": "dp_data/data/denmark-euro-2000/questionnaires/arrival-questionnaire-danish.pdf, PDF p.5, Q6; p.4, Q3c/Q3g; dp_data/data/denmark-euro-2000/questionnaires/departure-questionnaire-danish.pdf, PDF p.5, Q6.",
+      "source_limit": "Key inherited from packet; questionnaire verifies wording and context, not an independent legal answer key. Danish wording interpreted by this model-assisted coder; no human translation validation. Scope is retained tax authority, not proof that fiscal constraints or welfare effects are absent."
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "item_id": "knowledge_004",
+      "axis_id": "join_euro",
+      "fact_implication": "neutral",
+      "referent_groups": [
+        "Denmark"
+      ],
+      "rationale": "The correct year identifies a conditional implementation timetable. No source establishes that 2004, rather than the distractor years, favors joining. The questionnaire separately asks whether Denmark should wait, but a conditional circulation year is not itself an argument for waiting or joining.",
+      "evidence_locator": "dp_data/data/denmark-euro-2000/questionnaires/arrival-questionnaire-danish.pdf, PDF p.5, Q7 and Q3r; dp_data/data/denmark-euro-2000/questionnaires/departure-questionnaire-danish.pdf, PDF p.5, Q7.",
+      "source_limit": "Fielded Danish sources verify choices 2001/2004/2005/2007. English draft has different distractors; packet supplies the 2004 key. No independent timeline source reviewed."
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "item_id": "knowledge_005",
+      "axis_id": "join_euro",
+      "fact_implication": "ambiguous",
+      "referent_groups": [
+        "Danish National Bank",
+        "European Central Bank"
+      ],
+      "rationale": "Becoming part of the ECB can indicate lost national institutional independence or participation in European decision making. Both independence and influence are explicit questionnaire dimensions. The correct option is neither closure nor continuation unchanged, so a single net direction would discard relevant context.",
+      "evidence_locator": "dp_data/data/denmark-euro-2000/questionnaires/arrival-questionnaire-danish.pdf, PDF p.5, Q8; p.4, Q3c/Q3h; dp_data/data/denmark-euro-2000/questionnaires/departure-questionnaire-danish.pdf, PDF p.5, Q8.",
+      "source_limit": "Key inherited from packet; questionnaire verifies wording and context, not an independent legal answer key. Danish wording interpreted by this model-assisted coder; no human translation validation. The source option is institutionally compressed; no separate legal assessment of Eurosystem structure was performed."
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "item_id": "knowledge_006",
+      "axis_id": "join_euro",
+      "fact_implication": "supports",
+      "referent_groups": [
+        "Denmark",
+        "euro-area nations"
+      ],
+      "rationale": "A national face on euro coins retains a visible national symbol under the common currency and thus counters part of the explicitly asked threat-to-Danish-identity concern. This narrow symbolic implication favors joining without claiming that all identity concerns are resolved.",
+      "evidence_locator": "dp_data/data/denmark-euro-2000/questionnaires/arrival-questionnaire-danish.pdf, PDF pp.5-6, Q9; p.4, Q3e/Q3i; dp_data/data/denmark-euro-2000/questionnaires/departure-questionnaire-danish.pdf, PDF pp.5-6, Q9.",
+      "source_limit": "Key inherited from packet; questionnaire verifies wording and context, not an independent legal answer key. Danish wording interpreted by this model-assisted coder; no human translation validation. The fielded question concerns coins; the English draft adds bills and is not used for this code."
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "item_id": "knowledge_007",
+      "axis_id": "join_euro",
+      "fact_implication": "challenges",
+      "referent_groups": [
+        "Socialistisk Folkeparti"
+      ],
+      "rationale": "The keyed fact attributes an explicit recommendation to vote no to Socialistisk Folkeparti. The recommendation itself opposes the positive join-euro position. This codes the reported recommendation direction, not whether any respondent trusts that party or is persuaded by its endorsement.",
+      "evidence_locator": "dp_data/data/denmark-euro-2000/questionnaires/arrival-questionnaire-danish.pdf, PDF p.7, Q11 row 7; dp_data/data/denmark-euro-2000/questionnaires/departure-questionnaire-danish.pdf, PDF p.7, Q11 row 7; pilot.json key.",
+      "source_limit": "The questionnaire verifies the named party and yes/no task but does not mark the correct answer; historical no recommendation is inherited from packet, not independently corroborated. Exclude or analyze separately if the construct requires policy consequences rather than endorsement direction."
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "item_id": "knowledge_008",
+      "axis_id": "join_euro",
+      "fact_implication": "challenges",
+      "referent_groups": [
+        "Kristeligt Folkeparti"
+      ],
+      "rationale": "The keyed fact attributes an explicit recommendation to vote no to Kristeligt Folkeparti. The recommendation itself opposes the positive join-euro position. This codes the reported recommendation direction, not whether any respondent trusts that party or is persuaded by its endorsement.",
+      "evidence_locator": "dp_data/data/denmark-euro-2000/questionnaires/arrival-questionnaire-danish.pdf, PDF p.7, Q11 row 9; dp_data/data/denmark-euro-2000/questionnaires/departure-questionnaire-danish.pdf, PDF p.7, Q11 row 9; pilot.json key.",
+      "source_limit": "The questionnaire verifies the named party and yes/no task but does not mark the correct answer; historical no recommendation is inherited from packet, not independently corroborated. Exclude or analyze separately if the construct requires policy consequences rather than endorsement direction."
+    },
+    {
+      "poll_id": "denmark-euro-2000",
+      "item_id": "knowledge_009",
+      "axis_id": "join_euro",
+      "fact_implication": "challenges",
+      "referent_groups": [
+        "Fremskridtspartiet"
+      ],
+      "rationale": "The keyed fact attributes an explicit recommendation to vote no to Fremskridtspartiet. The recommendation itself opposes the positive join-euro position. This codes the reported recommendation direction, not whether any respondent trusts that party or is persuaded by its endorsement.",
+      "evidence_locator": "dp_data/data/denmark-euro-2000/questionnaires/arrival-questionnaire-danish.pdf, PDF p.7, Q11 row 11; dp_data/data/denmark-euro-2000/questionnaires/departure-questionnaire-danish.pdf, PDF p.7, Q11 row 11; pilot.json key.",
+      "source_limit": "The questionnaire verifies the named party and yes/no task but does not mark the correct answer; historical no recommendation is inherited from packet, not independently corroborated. Exclude or analyze separately if the construct requires policy consequences rather than endorsement direction."
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "item_id": "knowledge_001",
+      "axis_id": "religious_alignment",
+      "fact_implication": "unknown",
+      "referent_groups": [
+        "Catholic school communities",
+        "Protestant school communities"
+      ],
+      "rationale": "Low cross-religious enrollment describes both majority-Catholic and majority-Protestant schools. The briefing offers denominational continuity, joint management and integration as options, without mapping Catholic identity to one preference. It cannot establish which community is favored by the correct percentage.",
+      "evidence_locator": "pilot.json, t1q21; dp_data/data/northern-ireland-2007/briefing/education-briefing.pdf, PDF p.13, denominational collaboration; pp.14-16, options and tradeoffs.",
+      "source_limit": "Fielded wording/key inherited from packet; original questionnaire not independently located. Briefing corroborates substantive context. Report PDF pp.34-36 were accidentally exposed during attempted questionnaire retrieval; aggregate outcomes were not used as coding evidence. Briefing says a little less than 10 percent with a significant minority; the exact at-least-10-percent condition is retained from the packet.",
+      "alternative_axis": "increase_cross_community_school_contact: supports a need rationale if contact is the explicit baseline preference; does not identify the best institutional remedy"
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "item_id": "knowledge_002",
+      "axis_id": "religious_alignment",
+      "fact_implication": "unknown",
+      "referent_groups": [
+        "Omagh pupils",
+        "Omagh schools"
+      ],
+      "rationale": "The decline concerns the school-age population across the area. It motivates rationalisation in the briefing but contains no Catholic-versus-Protestant comparison or evidence of opposing community preferences.",
+      "evidence_locator": "pilot.json, t1q22; dp_data/data/northern-ireland-2007/briefing/education-briefing.pdf, PDF p.4, five-year 10 percent decline; pp.5-6, options.",
+      "source_limit": "Fielded wording/key inherited from packet; original questionnaire not independently located. Briefing corroborates substantive context. Report PDF pp.34-36 were accidentally exposed during attempted questionnaire retrieval; aggregate outcomes were not used as coding evidence.",
+      "alternative_axis": "school_rationalisation: supports the stated capacity rationale, without choosing among particular reforms"
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "item_id": "knowledge_003",
+      "axis_id": "religious_alignment",
+      "fact_implication": "unknown",
+      "referent_groups": [
+        "pupils aged 14 and over",
+        "schools"
+      ],
+      "rationale": "The entitlement to at least 24 subjects is a common curriculum requirement. The briefing connects it to collaboration with colleges and schools, not to a particular religious community alignment.",
+      "evidence_locator": "pilot.json, t1q23; dp_data/data/northern-ireland-2007/briefing/education-briefing.pdf, PDF pp.2-3, entitlement framework; pp.10-12, school collaboration.",
+      "source_limit": "Fielded wording/key inherited from packet; original questionnaire not independently located. Briefing corroborates substantive context. Report PDF pp.34-36 were accidentally exposed during attempted questionnaire retrieval; aggregate outcomes were not used as coding evidence. Full correct proposition is recoverable from briefing despite truncated packet choice.",
+      "alternative_axis": "school_curriculum_collaboration: supports the stated delivery rationale; no uniquely required organizational form"
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "item_id": "knowledge_004",
+      "axis_id": "religious_alignment",
+      "fact_implication": "unknown",
+      "referent_groups": [
+        "pupils aged 14 and over",
+        "schools"
+      ],
+      "rationale": "The one-third-applied requirement broadens curricular obligations shared by schools. It bears on provision of applied courses and collaboration; religious identity supplies no warranted preference or favorable direction.",
+      "evidence_locator": "pilot.json, t1q24; dp_data/data/northern-ireland-2007/briefing/education-briefing.pdf, PDF pp.2-3, entitlement framework; p.7, underrepresentation of applied subjects.",
+      "source_limit": "Fielded wording/key inherited from packet; original questionnaire not independently located. Briefing corroborates substantive context. Report PDF pp.34-36 were accidentally exposed during attempted questionnaire retrieval; aggregate outcomes were not used as coding evidence. Full requirement is corroborated in briefing; no Catholic/Protestant mapping.",
+      "alternative_axis": "expand_applied_course_access: supports the requirement-based rationale, not a claim of demonstrated learning benefits"
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "item_id": "knowledge_005",
+      "axis_id": "religious_alignment",
+      "fact_implication": "unknown",
+      "referent_groups": [
+        "grammar school leavers",
+        "secondary school leavers"
+      ],
+      "rationale": "The grammar-to-higher-education transition rate concerns school type rather than religious community. The briefing does not connect the rate to a Catholic-versus-Protestant policy stance, and the descriptive rate cannot prove a causal benefit of selection.",
+      "evidence_locator": "pilot.json, t1q25; dp_data/data/northern-ireland-2007/briefing/education-briefing.pdf, PDF pp.21-22, destinations of school leavers; p.20, academic selection.",
+      "source_limit": "Fielded wording/key inherited from packet; original questionnaire not independently located. Briefing corroborates substantive context. Report PDF pp.34-36 were accidentally exposed during attempted questionnaire retrieval; aggregate outcomes were not used as coding evidence. Briefing says higher education; the packet truncates university wording. Neither establishes causal effects of grammar schools.",
+      "alternative_axis": "retain_grammar_schools: ambiguous; successful destinations may be invoked, but selection/composition prevent a causal advantage inference"
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "item_id": "knowledge_006",
+      "axis_id": "religious_alignment",
+      "fact_implication": "unknown",
+      "referent_groups": [
+        "older pupils",
+        "younger pupils",
+        "schools"
+      ],
+      "rationale": "A higher allocation for pupils aged 16 and over creates funding implications for age restructuring, but it is not a fact about the comparative interests or positions of Catholic and Protestant communities.",
+      "evidence_locator": "pilot.json, t1q26; dp_data/data/northern-ireland-2007/briefing/education-briefing.pdf, PDF p.21, school funding; pp.17-19, age-grouping options.",
+      "source_limit": "Fielded wording/key inherited from packet; original questionnaire not independently located. Briefing corroborates substantive context. Report PDF pp.34-36 were accidentally exposed during attempted questionnaire retrieval; aggregate outcomes were not used as coding evidence.",
+      "alternative_axis": "retain_sixth_forms_in_existing_schools: supports a funding-retention rationale conditional on that explicit policy preference"
+    },
+    {
+      "poll_id": "northern-ireland-2007",
+      "item_id": "knowledge_007",
+      "axis_id": "religious_alignment",
+      "fact_implication": "unknown",
+      "referent_groups": [
+        "voluntary grammar schools",
+        "Boards of Governors",
+        "Catholic maintained schools",
+        "controlled schools"
+      ],
+      "rationale": "The keyed employer for voluntary grammar teachers is the Board of Governors. The briefing distinguishes several employers and a proposed common authority; those governance distinctions do not identify a Catholic rather than Protestant favorable direction.",
+      "evidence_locator": "pilot.json, t1q27; dp_data/data/northern-ireland-2007/briefing/education-briefing.pdf, PDF p.21, current employing authorities and proposed ESA.",
+      "source_limit": "Fielded wording/key inherited from packet; original questionnaire not independently located. Briefing corroborates substantive context. Report PDF pp.34-36 were accidentally exposed during attempted questionnaire retrieval; aggregate outcomes were not used as coding evidence. Catholic schools appear among distractors/context; that does not make the correct voluntary-grammar proposition Catholic-favoring.",
+      "alternative_axis": "centralise_teacher_employment: ambiguous; existing fragmentation could motivate coordination or preservation of local governance"
+    }
+  ]
+}

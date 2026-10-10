@@ -1,0 +1,394 @@
+{
+  "purpose": "Bounded source-only baseline recovery; preserves prior independent outputs",
+  "exposure_note": "No participant records or outcome tables consulted for this task. AMR PDF reads were limited to dictionary descriptions/value labels and questionnaire pp1-8; prior codebook-summary exposure is disclosed in expanded_b_notes.txt.",
+  "records": [
+    {
+      "poll_id": "amr-2024",
+      "item_id": "knowledge_002",
+      "axis_proposed": "antibiotic_development_incentives",
+      "sourcefield": null,
+      "baseline_wave": "Time=0 pre",
+      "status": "unresolved_no_matching_proposal",
+      "positive_substantive_values": [],
+      "negative_substantive_values": [],
+      "neutral_values": [],
+      "nonanswer_values": [],
+      "source_wording": "No proposal directly concerning incentives for development of a new antibiotic class found among Q6-Q12 / 45 proposals.",
+      "source_locators": [
+        "dp_data/data/amr-2024/questionnaires/survey-and-extended-data.pdf: questionnaire pp.1-8 only",
+        "dp_data/data/amr-2024/codebooks/harmonized-codebook.pdf: Time value labels 0=pre, 1=post (descriptions and value labels only)",
+        "dp_data/metadata/analysis_survey_waves.csv: amr-2024 Time0"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "The fact about the last new marketed class is relevant to development, but the existing policy battery does not provide an exact development-incentive preference. Q13.2 confidence that experts will solve resistance is a belief, not a development policy. Do not substitute availability of existing basic antibiotics or generic surveillance funding.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true
+    },
+    {
+      "poll_id": "amr-2024",
+      "item_id": "knowledge_003",
+      "axis_proposed": "awareness_of_unnecessary_antibiotic_harms",
+      "sourcefield": "proposal_34",
+      "baseline_wave": "Time=0 pre",
+      "status": "verified_policy_specific_reframing",
+      "positive_substantive_values": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "negative_substantive_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "neutral_values": [
+        5
+      ],
+      "nonanswer_values": [
+        "all values outside 0..10; system missing"
+      ],
+      "source_wording": "Awareness campaigns should focus on the risks and harms of taking unnecessary antibiotics on humans, food security, and the environment.",
+      "source_locators": [
+        "dp_data/data/amr-2024/questionnaires/survey-and-extended-data.pdf: questionnaire pp.1-8 only",
+        "dp_data/data/amr-2024/codebooks/harmonized-codebook.pdf: Time value labels 0=pre, 1=post (descriptions and value labels only)",
+        "dp_data/metadata/analysis_survey_waves.csv: amr-2024 Time0",
+        "dp_data/data/amr-2024/questionnaires/survey-and-extended-data.pdf: PDF p.6 Q10.3; 0 strongly oppose, 10 strongly support, 5 middle",
+        "dp_data/data/amr-2024/codebooks/harmonized-codebook.pdf: PDF p.16 proposal_34 description"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "The fact includes adverse effects, allergy and absence of antiviral benefit, directly relevant to awareness of unnecessary-use harms. This is a measured awareness-campaign preference, narrower than a general stewardship or prescribing restriction axis. It is not an identity proxy.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true
+    },
+    {
+      "poll_id": "amr-2024",
+      "item_id": "knowledge_004",
+      "axis_proposed": "infection_prevention",
+      "sourcefield": "proposal_15",
+      "baseline_wave": "Time=0 pre",
+      "status": "verified_with_knowledge_wording_conflict",
+      "positive_substantive_values": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "negative_substantive_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "neutral_values": [
+        5
+      ],
+      "nonanswer_values": [
+        "all values outside 0..10; system missing"
+      ],
+      "source_wording": "National governments should prioritise infection prevention tools (clean water, safe sanitation and vaccination) to reduce the burden of infectious diseases.",
+      "source_locators": [
+        "dp_data/data/amr-2024/questionnaires/survey-and-extended-data.pdf: questionnaire pp.1-8 only",
+        "dp_data/data/amr-2024/codebooks/harmonized-codebook.pdf: Time value labels 0=pre, 1=post (descriptions and value labels only)",
+        "dp_data/metadata/analysis_survey_waves.csv: amr-2024 Time0",
+        "dp_data/data/amr-2024/questionnaires/survey-and-extended-data.pdf: PDF p.4 Q8.1",
+        "dp_data/data/amr-2024/codebooks/harmonized-codebook.pdf: PDF p.11 proposal_15 description",
+        "dp_data/metadata/source_findings.csv: amr-question21-source-conflict"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "Despite the verb prioritise, the RESPONSE scale is explicit 0 strongly oppose to 10 strongly support, not an importance-only scale. Knowledge options support prevention effectiveness. Retain the documented Q21 conflict: English questionnaire repeats other options, whereas inventory/codebook carry prevention options; country field forms remain unrecovered.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true
+    },
+    {
+      "poll_id": "uk-health-1998",
+      "item_id": "knowledge_002",
+      "axis_proposed": "fund_nhs",
+      "sourcefield": "options1",
+      "baseline_wave": "T1 / baseline",
+      "status": "verified",
+      "positive_substantive_values": [
+        3
+      ],
+      "negative_substantive_values": [
+        1
+      ],
+      "neutral_values": [
+        2
+      ],
+      "nonanswer_values": [
+        -9,
+        -8,
+        -1
+      ],
+      "source_wording": "If the government had to choose between three options, should it spend less on the NHS and reduce taxes, keep spending about the same, or spend more even with increased taxes?",
+      "source_locators": [
+        "dp_data/data/uk-health-1998/codebooks/uk-health-codebook.txt: line3427 OPTIONS1/OPTIONS2 Q2 stem; distributions not read",
+        "dp_data/data/uk-health-1998/variables.csv: options1 Government options T1 Q2",
+        "dp_data/data/uk-health-1998/value-labels.csv: options1 lines470-475",
+        "dp_data/metadata/measure_definitions.csv: ukhealth.t1option@historical-v1",
+        "dp_data/data/uk-health-1998/variables.csv: t1option confirms 1=spend more,0=spend less normalized score"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "Ageing increases demand for NHS resources.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true
+    },
+    {
+      "poll_id": "uk-health-1998",
+      "item_id": "knowledge_004",
+      "axis_proposed": "fund_nhs",
+      "sourcefield": "options1",
+      "baseline_wave": "T1 / baseline",
+      "status": "verified",
+      "positive_substantive_values": [
+        3
+      ],
+      "negative_substantive_values": [
+        1
+      ],
+      "neutral_values": [
+        2
+      ],
+      "nonanswer_values": [
+        -9,
+        -8,
+        -1
+      ],
+      "source_wording": "If the government had to choose between three options, should it spend less on the NHS and reduce taxes, keep spending about the same, or spend more even with increased taxes?",
+      "source_locators": [
+        "dp_data/data/uk-health-1998/codebooks/uk-health-codebook.txt: line3427 OPTIONS1/OPTIONS2 Q2 stem; distributions not read",
+        "dp_data/data/uk-health-1998/variables.csv: options1 Government options T1 Q2",
+        "dp_data/data/uk-health-1998/value-labels.csv: options1 lines470-475",
+        "dp_data/metadata/measure_definitions.csv: ukhealth.t1option@historical-v1",
+        "dp_data/data/uk-health-1998/variables.csv: t1option confirms 1=spend more,0=spend less normalized score"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "Most people relying on NHS makes public-service resources consequential; this remains an interpretation-dependent funding argument rather than proof that a marginal increase is optimal.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true
+    },
+    {
+      "poll_id": "uk-eu-1995",
+      "item_id": "knowledge_003",
+      "axis_proposed": "closer_eu_relationship",
+      "sourcefield": "releu1",
+      "baseline_wave": "T1 / baseline",
+      "status": "verified_policy_specific_reframing",
+      "positive_substantive_values": [
+        4,
+        5
+      ],
+      "negative_substantive_values": [
+        1,
+        2
+      ],
+      "neutral_values": [
+        3
+      ],
+      "nonanswer_values": [
+        -1,
+        8,
+        9
+      ],
+      "source_wording": "As a member state, should Britain's relationship with the European Union be less close, about right, or closer?",
+      "source_locators": [
+        "dp_data/data/uk-eu-1995/codebook.txt: line1685 RELEU1 Q1 SAQ1 stem; distributions not read",
+        "dp_data/data/uk-eu-1995/variables.csv: releu1 T1",
+        "dp_data/data/uk-eu-1995/value-labels.csv: releu1 lines387-394"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "Tax autonomy supplies an autonomy reassurance for a closer relationship. This baseline is closeness conditional on membership, not an actual membership/withdrawal vote; reframe the axis explicitly. taxes1 is an alternative competence preference (1 mostly EU,2 equally,3 countries), but retained national tax authority does not automatically favor transferring tax authority to the EU.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true
+    },
+    {
+      "poll_id": "btp-2007",
+      "item_id": "knowledge_001",
+      "axis_proposed": "restore_voting_rights",
+      "sourcefield": "PRE_Q5c",
+      "baseline_wave": "T1 / baseline",
+      "status": "verified",
+      "positive_substantive_values": [
+        1,
+        2
+      ],
+      "negative_substantive_values": [
+        4,
+        5
+      ],
+      "neutral_values": [
+        3
+      ],
+      "nonanswer_values": [
+        99,
+        998,
+        999
+      ],
+      "source_wording": "Allowing felons to vote",
+      "source_locators": [
+        "dp_data/metadata/attitude_items.csv: att_pre_q5c",
+        "dp_data/data/btp-2007/codebook.pdf: PDF p.15 PRE_Q5c",
+        "dp_data/data/btp-2007/variables.csv: PRE_Q5c",
+        "dp_data/data/btp-2007/value-labels.csv: PRE_Q5c 1 favor strongly,2 favor somewhat,3 neither,4 oppose somewhat,5 oppose strongly"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "Number disenfranchised supplies a scope/representation argument for restoring rights. The exact eligibility conditions (e.g. after sentence) should remain those of administered wording.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true
+    },
+    {
+      "poll_id": "btp-2007",
+      "item_id": "knowledge_002",
+      "axis_proposed": "independent_redistricting",
+      "sourcefield": "PRE_Q9d",
+      "baseline_wave": "T1 / baseline",
+      "status": "verified",
+      "positive_substantive_values": [
+        1,
+        2
+      ],
+      "negative_substantive_values": [
+        4,
+        5
+      ],
+      "neutral_values": [
+        3
+      ],
+      "nonanswer_values": [
+        99,
+        998,
+        999
+      ],
+      "source_wording": "Nonpartisan commissions for redistricting",
+      "source_locators": [
+        "dp_data/metadata/attitude_items.csv: att_pre_q9d",
+        "dp_data/data/btp-2007/codebook.pdf: PDF p.19 PRE_Q9d",
+        "dp_data/data/btp-2007/variables.csv: PRE_Q9d",
+        "dp_data/data/btp-2007/value-labels.csv: PRE_Q9d 1 favor strongly,2 favor somewhat,3 neither,4 oppose somewhat,5 oppose strongly"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "Partisan gerrymandering purpose supports a nonpartisan-commission remedy, subject to effectiveness tradeoffs.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true
+    },
+    {
+      "poll_id": "btp-2007",
+      "item_id": "knowledge_003",
+      "axis_proposed": "election_day_holiday",
+      "sourcefield": "PRE_Q5a",
+      "baseline_wave": "T1 / baseline",
+      "status": "verified_field_direction_requires_reframing",
+      "positive_substantive_values": [
+        1,
+        2
+      ],
+      "negative_substantive_values": [
+        4,
+        5
+      ],
+      "neutral_values": [
+        3
+      ],
+      "nonanswer_values": [
+        99,
+        998,
+        999
+      ],
+      "source_wording": "Making Election Day a national holiday",
+      "source_locators": [
+        "dp_data/metadata/attitude_items.csv: att_pre_q5a",
+        "dp_data/data/btp-2007/codebook.pdf: PRE_Q5a",
+        "dp_data/data/btp-2007/variables.csv: PRE_Q5a",
+        "dp_data/data/btp-2007/value-labels.csv: PRE_Q5a 1 favor strongly,2 favor somewhat,3 neither,4 oppose somewhat,5 oppose strongly"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "Half turnout establishes a participation problem but does not establish that a holiday fixes it. PRE_Q5a is a possible specific baseline, not an interchangeable generic pro-participation measure; treat this as an interpretation-dependent sensitivity only. PRE_Q5b election-day registration and PRE_Q5e nonvoter fines are different interventions.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true
+    },
+    {
+      "poll_id": "europolis-2009",
+      "item_id": "knowledge_008",
+      "axis_proposed": "visa_overstay_enforcement",
+      "sourcefield": null,
+      "baseline_wave": "Knowledge V2 arrival; possible policy V1 recruitment or V2 arrival",
+      "status": "unresolved_no_exact_policy_contrast",
+      "positive_substantive_values": [],
+      "negative_substantive_values": [],
+      "neutral_values": [],
+      "nonanswer_values": [],
+      "source_wording": "No exact baseline preference for visa-overstay enforcement relative to border control recovered.",
+      "source_locators": [
+        "dp_data/data/europolis-2009/variables.csv: V1Q11_1, V2Q11_1",
+        "dp_data/data/europolis-2009/value-labels.csv: V1Q11_1",
+        "dp_data/data/europolis-2009/questionnaires/master-questionnaire-2009.pdf: PDF p.1 wave labels; p.5 Q11",
+        "dp_data/metadata/analysis_survey_waves.csv: Europolis T2 arrival; T3 departure"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "Reinforcing borders is not exclusive reliance on border-only enforcement. Overstay prevalence does not uniquely contradict strengthening border checks, so do not silently use opposition to strengthening as support for overstay enforcement. V2 knowledge is ARRIVAL before deliberation, not post-event; V3Q48 also exists.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true,
+      "alternative": {
+        "sourcefield": "V1Q11_1",
+        "arrival_sourcefield": "V2Q11_1",
+        "wording": "Reinforcing border controls",
+        "positive_values": [
+          1,
+          2
+        ],
+        "negative_values": [
+          4,
+          5
+        ],
+        "neutral": [
+          3
+        ],
+        "missing": [
+          997,
+          998,
+          999
+        ],
+        "limitation": "Verified policy scale but not an exact overstay-versus-border-only contrast; requires a newly adjudicated axis/direction."
+      }
+    },
+    {
+      "poll_id": "europolis-2009",
+      "item_id": "knowledge_009",
+      "axis_proposed": "expand_wind",
+      "sourcefield": null,
+      "baseline_wave": "T2/V2 arrival before deliberation",
+      "status": "unresolved_priority_scale",
+      "positive_substantive_values": [],
+      "negative_substantive_values": [],
+      "neutral_values": [],
+      "nonanswer_values": [],
+      "source_wording": "How much priority should be given to investing more in renewable sources like wind, hydro, wave and solar?",
+      "source_locators": [
+        "dp_data/data/europolis-2009/questionnaires/master-questionnaire-2009.pdf: PDF p.1 T2 arrival; PDF p.7 Q27.5",
+        "dp_data/data/europolis-2009/variables.csv: V2Q27_5",
+        "dp_data/data/europolis-2009/value-labels.csv: V2Q27_5 0 no priority,10 highest priority",
+        "dp_data/metadata/analysis_survey_waves.csv: T2 arrival"
+      ],
+      "direction_for_positive_position": "supports",
+      "rationale_and_limit": "V2Q27_5 is a pre-deliberation arrival priority rating, not support/oppose, and bundles renewables rather than wind alone. Low priority does not equal favoring less wind; use only a separately defined priority-moderation analysis or recover a bipolar preference. Earlier screening warnings about V2 being post-only were overbroad and are corrected here.",
+      "coder_id": "additional_baselines_b",
+      "source_only": true,
+      "alternative": {
+        "sourcefield": "V2Q27_5",
+        "scale": "0 no priority at all;5 exactly middle;10 highest priority",
+        "nonanswers": [
+          997,
+          998,
+          999
+        ],
+        "positive_negative_binary": "Not defined: importance/priority cannot be interpreted as a bipolar preference."
+      }
+    }
+  ]
+}

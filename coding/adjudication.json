@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-10",
+  "scope": "All 260 retained questions across 32 studies",
+  "decision_basis": "Outcome-independent substantive adjudication of model-assisted screens plus original questionnaires, stored codebooks and direct baseline fields",
+  "primary_rule": "Recognizable source-supported argument with closest bipolar baseline policy item and sufficiently resolved historical knowledge key",
+  "expanded_rule": "Additional contextual argument or documented source ambiguity; includes primary rows when estimated",
+  "not_mechanical_intersection": true,
+  "independence_limit": "Earlier Denmark results known; coders disclosed aggregate codebook summaries. Parent/reviewer saw UK crime baseline attitude frequencies to resolve stored-code reversal. No new comparative knowledge outcome was inspected before initial adjudication.",
+  "late_source_correction": "An initial comparison run completed without its outcomes being inspected while the independent reviewer identified the UK-EU full-integration versus current-membership mismatch. Replaced unite1 with closer-relations releu1, restricted item to expanded, and reran before inspecting comparative estimates.",
+  "decisions": [
+    "UK crime uses stored codebook labels, reversing the printed questionnaire's response numbering.",
+    "AMR prevention key conflict retained only in expanded mapping.",
+    "NI declining intake uses shared-campus t1q11e; curriculum facts use pupil-travel t1q11f; religious identity is not substituted.",
+    "Australia direct approve1 excludes uncertain/leaning answers; generic republicanism is not substituted.",
+    "A1R ACA has separate policy and party constructs; no capital-gains party mapping.",
+    "Utility importance scales do not define a clean opposite position; remain unclassified pending defensible alternative.",
+    "Bulgaria crime 2002 legal-prohibition item is not Roma knowledge; missing Bulgaria 2007 Roma microdata is not substituted."
+  ],
+  "validation": "Independent review confirmed original source_row plus source respondent IDs for all 16 selected studies without mismatches; no outcome tables consulted in review.",
+  "post_estimation_source_correction": "Low Vermont accuracy triggered a targeted source audit. Original final report PDFp25 explicitly excluded efficiency-impact item as flawed. Downgraded to expanded/source-flawed sensitivity after outcome inspection; preserved key3 and all estimates. This is not a preregistered exclusion.",
+  "post_estimation_reporting_decision": "Suppress displayed intervals for existing sparse_support flag (<5 resampling units in a cell) and partial discussion-group coverage; preserve original conditional bootstrap outputs and invalid-draw counts."
+}
