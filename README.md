@@ -56,3 +56,7 @@ Unclassifiable respondent-item rows remain in the data. The full inventory conta
 coding covers 16 studies; 14 enter the primary policy comparison. Coding is
 model-assisted and provisional. The paper reports descriptive paired changes,
 source and response-rule sensitivities, and a separate US party comparison.
+
+<!-- adjacent:start -->
+
+<!-- adjacent:end -->
