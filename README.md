@@ -59,4 +59,14 @@ source and response-rule sensitivities, and a separate US party comparison.
 
 <!-- adjacent:start -->
 
+## 🔗 Adjacent Repositories
+
+- [soodoku/dp_data](https://github.com/soodoku/dp_data) — Deliberative Poll data
+- [soodoku/partisan_campaigns](https://github.com/soodoku/partisan_campaigns) — Coming to Dislike Your Opponents
+- [soodoku/dp_distortions](https://github.com/soodoku/dp_distortions) — Replication Data and Scripts for Deliberative Distortions
+- [soodoku/dp_learning](https://github.com/soodoku/dp_learning) — Deliberation and Learning: Evidence From Deliberative Polls \(Luskin, Sood, Fishkin\)
+- [soodoku/poor_browser](https://github.com/soodoku/poor_browser) — Do people on older browsers abandon surveys at higher rates?
+
+_Powered by [Adjacent](https://github.com/gojiplus/adjacent)_
+
 <!-- adjacent:end -->
